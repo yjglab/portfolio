@@ -79,9 +79,6 @@ const NavBar: FC = () => {
                   <p className='mt-4 text-center text-xs leading-6 text-slate-500'>
                     © 2023 Jaekyeong Yuk. All rights reserved.
                   </p>
-                  <div className='gap-4 flex w-full mt-2 opacity-80 justify-center items-center left-0 right-0 mx-auto'>
-                    <a href='https://bloobolt.com'></a>
-                  </div>
                 </div>
               </Dialog.Panel>
             </Transition.Child>

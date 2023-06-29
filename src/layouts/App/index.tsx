@@ -3,9 +3,9 @@ import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../../pages/Home';
 import NavBar from '../../components/NavBar';
-import Projects from '../../pages/Projects';
 import Activities from '../../pages/Activities';
 import Footer from '../../components/Footer';
+import Projects from '../../pages/Projects';
 
 function App() {
   return (
