@@ -105,7 +105,7 @@ const NavBar: FC = () => {
                     <Link
                       key={page.name}
                       to={page.href}
-                      className='flex items-center text-sm font-medium text-slate-600 hover:text-slate-900'
+                      className='flex items-center text-sm font-medium text-slate-600 hover:text-slate-700'
                     >
                       {page.name}
                     </Link>

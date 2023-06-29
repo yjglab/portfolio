@@ -5,7 +5,7 @@ interface Props {
 }
 const Badge: FC<Props> = ({ content }) => {
   return (
-    <span className='hover:contrast-150 mr-1 mb-1 py-0.5 rounded-full flex justify-center items-center bg-slate-200 text-slate-700 px-2.5 text-xs hover:bg-'>
+    <span className='hover:contrast-150 mr-1 py-0.5 rounded-md flex justify-center items-center bg-slate-200 text-slate-700 px-2.5 text-xs hover:bg-'>
       {content}
     </span>
   );
