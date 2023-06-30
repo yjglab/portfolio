@@ -1,12 +1,104 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { projectsDev } from '../tools/data';
+import Badge from './Badge';
+import Carousel from './Carousel';
 
 const Project: FC = () => {
   const { name } = useParams();
-  const project = projectsDev.filter((v) => v.href === name);
+  const project = projectsDev.filter((v) => v.href === name)[0];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
+    <div className='min-h-screen'>
+      <header className='mx-auto max-w-2xl px-4 py-3 sm:px-6  lg:max-w-7xl lg:px-8'>
+        <div className='flex flex-col text-sm md:text-base md:flex-row items-center justify-between border-b border-slate-200 pb-5 pt-24'>
+          <div className='flex gap-1.5 items-center'>
+            <h1 className='text-3xl font-bold tracking-tight text-slate-700'>{project.name}</h1>
+            <span className='relative top-0.5'>
+              <Badge content={project.details.version} />
+            </span>
+          </div>
+          <span className='mt-2 md:mt-0 text-slate-800 overflow-hidden text-ellipsis line-clamp-1'>
+            {project.subtitle}
+          </span>
+        </div>
+        <div className='flex items-center'></div>
+      </header>
 
-  return <div className='min-h-screen'></div>;
+      <div className='bg-white'>
+        <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 px-4 py-4 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8'>
+          <div>
+            <p className=' text-gray-500'>
+              {project.details.description}
+              <p className='mt-12 flex items-center text-gray-500'>
+                <span className='font-medium text-gray-900 mr-4'>Link</span>
+                <p className='flex gap-4 items-center text-sm'>
+                  <a
+                    className='hover:text-slate-700 font-bold'
+                    target='_blank'
+                    rel='noreferer'
+                    href={project.details.link.production}
+                  >
+                    프로덕션 페이지
+                  </a>
+                  <a
+                    className='hover:text-slate-700 font-bold'
+                    target='_blank'
+                    rel='noreferer'
+                    href={project.details.link.wiki}
+                  >
+                    기능 상세보기
+                  </a>
+                  <a
+                    className='hover:text-slate-700 font-bold'
+                    target='_blank'
+                    rel='noreferer'
+                    href={project.details.link.github}
+                  >
+                    GitHub
+                  </a>
+                </p>
+              </p>
+            </p>
+
+            <dl className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8'>
+              <div className='border-t border-gray-200 pt-4'>
+                <dt className='font-medium text-gray-900 mb-3'>기술 태그</dt>
+                {project.details.skills.map((skill) => (
+                  <div key={skill.name} className='my-3 relative text-gray-500 text-sm'>
+                    <dt className='inline bg-slate-200 px-2 py-0.5 rounded-md mr-1 text-gray-900'>
+                      {skill.name}
+                    </dt>{' '}
+                    <dd className='inline'>{skill.content}</dd>
+                  </div>
+                ))}
+              </div>
+              <div className='border-t border-gray-200 pt-4'>
+                <dt className='font-medium text-gray-900 mb-3'>구현된 기능</dt>
+                {project.details.implements.map((implement) => (
+                  <div key={implement.name} className='my-3 relative text-gray-500 text-sm'>
+                    <dt className='inline bg-slate-200 px-2 py-0.5 rounded-md mr-1 text-gray-900'>
+                      {implement.name}
+                    </dt>{' '}
+                    <dd className='inline'>
+                      {implement.content.map((ct) => (
+                        <span className='mr-1.5'>{ct},</span>
+                      ))}
+                    </dd>
+                  </div>
+                ))}
+              </div>
+            </dl>
+          </div>
+          <div className='w-full'>
+            <Carousel images={project.details.images} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Project;
