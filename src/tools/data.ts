@@ -10,6 +10,8 @@ export const projectsDev = [
 
     details: {
       version: '0.2.0',
+      banner:
+        'https://user-images.githubusercontent.com/70316567/244275440-8ca66b16-06fb-4cb5-b6e7-d10a318c8787.png',
       link: {
         production: 'https://bloobolt.com',
         github: 'https://github.com/yjglab/BlooBolt',
@@ -110,6 +112,8 @@ export const projectsDev = [
 
     details: {
       version: '0.0.0',
+      banner:
+        'https://user-images.githubusercontent.com/70316567/244275412-3cdba637-ca3d-4c3c-87ca-23ebbeaf863f.png',
       link: {
         production: 'https://blooways.online',
         github: 'https://github.com/yjglab/BlooWays',
@@ -133,7 +137,8 @@ export const projectsDev = [
           content: 'Nginx + HTTPS',
         },
       ],
-      description: 'BlooWays는 소켓을 이용한 실시간 라이브 토크 기능을 제공하는 웹 서비스입니다.',
+      description:
+        'BlooWays는 소켓 통신을 활용하여 1대1 또는 다수의 멤버들과 실시간 라이브 메시지를 주고받을 수 있는 서비스입니다. 블루웨이와 에리어는 각각 크고 작은 개념의 대화 공간을 의미하며, 사용자는 여러 개의 대화 공간을 생성하고 원하는 멤버를 초대하여 자신과 유사한 성향을 가진 멤버들과 소통할 수 있습니다.',
       implements: [
         {
           name: '사용자',
@@ -162,19 +167,19 @@ export const projectsDev = [
       images: [
         {
           name: '1',
-          src: '',
+          src: 'https://user-images.githubusercontent.com/70316567/244487699-dad71027-af44-48bd-98ef-c30cf4f2fe69.gif',
         },
         {
           name: '2',
-          src: '',
+          src: 'https://user-images.githubusercontent.com/70316567/244768288-dd6edabe-0ac3-4f7f-bc31-6c69163c5949.gif',
         },
         {
           name: '3',
-          src: '',
+          src: 'https://user-images.githubusercontent.com/70316567/244759560-68cc8b61-84dd-46d5-a029-9a758f0663c4.gif',
         },
         {
-          name: '프로필',
-          src: '',
+          name: '4',
+          src: 'https://user-images.githubusercontent.com/70316567/244943925-9ce4dc95-8e95-408d-ba52-d833c3d4d95d.gif',
         },
       ],
     },
@@ -190,6 +195,8 @@ export const projectsDev = [
 
     details: {
       version: '0.3.0',
+      banner:
+        'https://user-images.githubusercontent.com/70316567/244275470-4cee1794-ddd5-4494-9a70-417a58c6293e.png',
       link: {
         production: 'https://mug-lab.fly.dev',
         github: 'https://github.com/yjglab/MuG',
@@ -227,19 +234,19 @@ export const projectsDev = [
       images: [
         {
           name: '1',
-          src: '',
+          src: 'https://user-images.githubusercontent.com/70316567/246902735-ad6c4f25-e2d1-4497-a794-b1a1e325da8c.gif',
         },
         {
           name: '2',
-          src: '',
+          src: 'https://user-images.githubusercontent.com/70316567/246904605-908ca20c-4c32-44f9-be62-492cb43e206f.gif',
         },
         {
           name: '3',
-          src: '',
+          src: 'https://user-images.githubusercontent.com/70316567/246907465-60c5bfaa-ae5a-4865-aca3-3518273110da.gif',
         },
         {
-          name: '프로필',
-          src: '',
+          name: '4',
+          src: 'https://user-images.githubusercontent.com/70316567/246910780-49bfc411-765f-43ce-ab53-23a66297a262.gif',
         },
       ],
     },
@@ -250,11 +257,13 @@ export const projectsDev = [
     imageSrc: '',
     imageAlt: '티라미수 케이크 쇼핑몰 사이트',
     date: 2021,
-    skills: ['JavaScript', 'JQuery', 'Express', 'Pug', 'SCSS'],
+    skills: ['JavaScript', 'JQuery', 'Express', 'Pug', 'SCSS', 'MongoDB'],
     subtitle: '티라미수 케이크 쇼핑몰 사이트',
 
     details: {
       version: '0.0.0',
+      banner:
+        'https://user-images.githubusercontent.com/70316567/244276278-2f275afb-7afe-45d2-abc9-a49e0903ab3a.png',
       link: {
         production: 'https://tira-santorini.fly.dev',
         github: 'https://github.com/yjglab/tira-santorini',
@@ -285,19 +294,19 @@ export const projectsDev = [
       images: [
         {
           name: '1',
-          src: '',
+          src: 'https://user-images.githubusercontent.com/70316567/247320856-21132a08-6982-4291-b7e8-281f86e7b31d.gif',
         },
         {
           name: '2',
-          src: '',
+          src: 'https://user-images.githubusercontent.com/70316567/247320819-d3e4e7dd-dd49-4ce8-9616-f38875fcdfcc.gif',
         },
         {
           name: '3',
-          src: '',
+          src: 'https://user-images.githubusercontent.com/70316567/247320897-aa7fda01-8601-4ec9-ba67-d385523b7167.gif',
         },
         {
-          name: '프로필',
-          src: '',
+          name: '4',
+          src: 'https://user-images.githubusercontent.com/70316567/247320934-58ee70db-4fc0-4210-8e4d-cfe89a7b5691.gif',
         },
       ],
     },

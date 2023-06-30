@@ -9,14 +9,14 @@ const Footer = () => {
         <div className='flex w-36 justify-center items-center left-0 right-0 mx-auto'>
           <img alt='' className='w-20 h-auto' src={bloosLogoFull} />
         </div>
-        <p className='mt-4 text-center text-xs leading-6 text-slate-500'>
+        <p className='mt-4 text-center text-xs leading-6 text-slate-600'>
           © 2023 Jaekyeong Yuk. All rights reserved.
         </p>
         <div className='mt-12 flex items-center justify-center space-x-4 text-sm font-semibold leading-6 text-slate-700'>
           <Link to=''>
             <span className='cursor-pointer'></span>
           </Link>
-          <div className='h-4 w-px bg-slate-500/20' />
+          <div className='h-4 w-px bg-slate-600/20' />
           <Link to=''>
             <span className='cursor-pointer'></span>
           </Link>

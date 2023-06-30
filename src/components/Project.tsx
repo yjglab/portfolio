@@ -30,10 +30,15 @@ const Project: FC = () => {
       <div className='bg-white'>
         <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 px-4 py-4 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8'>
           <div>
-            <p className=' text-gray-500'>
+            <p className=' text-slate-600'>
+              <img
+                alt=''
+                src={project.details.banner}
+                className='ring-1 ring-slate-200 mb-5 rounded-md w-full'
+              />
               {project.details.description}
-              <p className='mt-12 flex items-center text-gray-500'>
-                <span className='font-medium text-gray-900 mr-4'>Link</span>
+              <p className='mt-12 flex items-center text-slate-600'>
+                <span className='font-medium text-slate-900 mr-4'>Link</span>
                 <p className='flex gap-4 items-center text-sm'>
                   <a
                     className='hover:text-slate-700 font-bold'
@@ -64,22 +69,22 @@ const Project: FC = () => {
             </p>
 
             <dl className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8'>
-              <div className='border-t border-gray-200 pt-4'>
-                <dt className='font-medium text-gray-900 mb-3'>기술 태그</dt>
+              <div className='border-t border-slate-200 pt-4'>
+                <dt className='font-medium text-slate-900 mb-3'>기술 태그</dt>
                 {project.details.skills.map((skill) => (
-                  <div key={skill.name} className='my-3 relative text-gray-500 text-sm'>
-                    <dt className='inline bg-slate-200 px-2 py-0.5 rounded-md mr-1 text-gray-900'>
+                  <div key={skill.name} className='my-3 relative text-slate-600 text-sm'>
+                    <dt className='inline bg-slate-200 px-2 py-0.5 rounded-md mr-1 text-slate-900'>
                       {skill.name}
                     </dt>{' '}
                     <dd className='inline'>{skill.content}</dd>
                   </div>
                 ))}
               </div>
-              <div className='border-t border-gray-200 pt-4'>
-                <dt className='font-medium text-gray-900 mb-3'>구현된 기능</dt>
+              <div className='border-t border-slate-200 pt-4'>
+                <dt className='font-medium text-slate-900 mb-3'>구현된 기능</dt>
                 {project.details.implements.map((implement) => (
-                  <div key={implement.name} className='my-3 relative text-gray-500 text-sm'>
-                    <dt className='inline bg-slate-200 px-2 py-0.5 rounded-md mr-1 text-gray-900'>
+                  <div key={implement.name} className='my-3 relative text-slate-600 text-sm'>
+                    <dt className='inline bg-slate-200 px-2 py-0.5 rounded-md mr-1 text-slate-900'>
                       {implement.name}
                     </dt>{' '}
                     <dd className='inline'>
@@ -92,8 +97,8 @@ const Project: FC = () => {
               </div>
             </dl>
           </div>
-          <div className='w-full'>
-            <Carousel images={project.details.images} />
+          <div className='w-full relative'>
+            <Carousel images={project.details.images} wikiUrl={project.details.link.wiki} />
           </div>
         </div>
       </div>

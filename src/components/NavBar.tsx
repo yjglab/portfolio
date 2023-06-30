@@ -76,7 +76,7 @@ const NavBar: FC = () => {
                   <div className='flex w-full justify-center gap-1 items-center left-0 right-0 mx-auto'>
                     <img alt='' src={bloosLogoFull} className='w-24' />
                   </div>
-                  <p className='mt-4 text-center text-xs leading-6 text-slate-500'>
+                  <p className='mt-4 text-center text-xs leading-6 text-slate-600'>
                     © 2023 Jaekyeong Yuk. All rights reserved.
                   </p>
                 </div>
