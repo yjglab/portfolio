@@ -98,7 +98,7 @@ const Project: FC = () => {
             </dl>
           </div>
           <div className='w-full relative'>
-            <Carousel images={project.details.images} wikiUrl={project.details.link.wiki} />
+            <Carousel subMessage={true} images={project.details.images} wikiUrl={project.details.link.wiki} />
           </div>
         </div>
       </div>

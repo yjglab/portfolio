@@ -1,3 +1,94 @@
+export const activities = [
+  {
+    status: '진행중인 활동',
+    name: '개인 기술블로그',
+    href: 'blog',
+    imageAlt: '',
+    date: '2020. 07~',
+    subtitle: '공부한 내용을 기록해두는 개인 블로그.',
+    thumb: 'https://github.com/yjglab/portfolio/assets/70316567/8c24b186-8b5b-4efe-bf9b-df12ca5129ab',
+
+    details: {
+      banner: '',
+      link: ['https://yjg-lab.tistory.com'],
+      description:
+        '개발 공부를 시작한 후부터 지금까지 지속적으로 공부했던 내용을 기록해두는 개인 블로그입니다. 주로 CS지식, Python과 JavaScript로 풀이한 알고리즘 문제 풀이 등을 기록하고 있으며 언제 어디서든 기록한 내용들을 복습하기 위해 관리하고 있습니다.',
+      images: [{ name: '', src: '' }],
+    },
+  },
+  {
+    status: '완료된 활동',
+    name: 'ICT 이노베이션 스퀘어 코딩경진대회',
+    href: 'coding-competition',
+    imageAlt: '',
+    date: '2023. 06',
+    subtitle: '전주문화산업진흥원 주관으로 진행된 코딩경진대회에서 대상 수상.',
+    thumb: 'https://github.com/yjglab/portfolio/assets/70316567/eaff2b5e-8606-43b9-ae12-2f423126ca4e',
+
+    details: {
+      banner: 'https://github.com/yjglab/portfolio/assets/70316567/eaff2b5e-8606-43b9-ae12-2f423126ca4e',
+      link: [],
+      description:
+        '전주 ICT 교육사업부에서 진행한 코딩경진대회입니다. 총 2시간의 제한 시간 내로 원하는 언어를 골라 주어진 3개의 알고리즘 문제를 풀어내는 것이 대회 목표입니다. 가지고 있던 코딩 능력을 발휘해볼 소중한 기회였으며 대상이라는 값진 성과를 만들었습니다.',
+      images: [
+        {
+          name: '1',
+          src: 'https://user-images.githubusercontent.com/70316567/244946346-3dfd6ee7-5051-45f9-8596-f566d2f669e4.gif',
+        },
+        {
+          name: '2',
+          src: 'https://user-images.githubusercontent.com/70316567/244888544-af3068a5-a581-4014-b604-d9e831ec79da.gif',
+        },
+        {
+          name: '3',
+          src: 'https://user-images.githubusercontent.com/70316567/244886246-3d82eddb-7fe4-4441-8346-b17354806997.gif',
+        },
+        {
+          name: '프로필',
+          src: 'https://user-images.githubusercontent.com/70316567/244889548-238d3104-af3c-4de1-82bc-2639540840ea.gif',
+        },
+      ],
+    },
+  },
+  {
+    status: '완료된 활동',
+    name: 'Python NumPy 모듈 강의 제작',
+    href: 'python-numpy',
+    imageAlt: '',
+    date: '2021. 09',
+    subtitle: '데이터 분석과 처리에 흥미를 느껴, 자가 복습용으로 만든 강의 영상',
+    thumb:
+      'https://asset.programmers.co.kr/production/course_intro/16290/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%82%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF.jpeg',
+
+    details: {
+      banner: 'https://asset.programmers.co.kr/production/course_intro/16290/banner-01-01.jpg',
+      link: [
+        'https://inf.run/iQee',
+        'https://school.programmers.co.kr/learn/courses/16290/16290-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B3%BC%ED%95%99%EC%9D%84-%EC%9C%84%ED%95%9C-%ED%8C%8C%EC%9D%B4%EC%8D%AC-numpy',
+      ],
+      description:
+        '빅데이터 과목을 수강하면서 데이터 분석 분야에 관심이 생겨, 파이썬 모듈 강의를 제작하였습니다. 이 강의는 NumPy 모듈의 메서드 활용법을 학습할 수 있는 내용으로 구성되었습니다. 강의는 인프런에 업로드되어 있으며, 프로그래머스 스쿨에서도 업로드 제안이 들어와 내용을 업데이트하고 추가로 업로드하였습니다. 현재까지 약 2,800여 명이 신청하여 도움을 받아갔습니다. 개인적으로, 내가 알고 있는 내용을 다른 사람에게 설명해보는 것이 최고의 학습법이라고 생각합니다.',
+      images: [
+        {
+          name: '1',
+          src: 'https://user-images.githubusercontent.com/70316567/244946346-3dfd6ee7-5051-45f9-8596-f566d2f669e4.gif',
+        },
+        {
+          name: '2',
+          src: 'https://user-images.githubusercontent.com/70316567/244888544-af3068a5-a581-4014-b604-d9e831ec79da.gif',
+        },
+        {
+          name: '3',
+          src: 'https://user-images.githubusercontent.com/70316567/244886246-3d82eddb-7fe4-4441-8346-b17354806997.gif',
+        },
+        {
+          name: '프로필',
+          src: 'https://user-images.githubusercontent.com/70316567/244889548-238d3104-af3c-4de1-82bc-2639540840ea.gif',
+        },
+      ],
+    },
+  },
+];
 export const projectsDev = [
   {
     name: 'BlooBolt',

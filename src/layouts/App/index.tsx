@@ -6,6 +6,7 @@ import Activities from '../../pages/Activities';
 import Footer from '../../components/Footer';
 import Projects from '../../pages/Projects';
 import Project from '../../components/Project';
+import Activity from '../../components/Activity';
 
 const App = () => (
   <BrowserRouter>
@@ -16,6 +17,7 @@ const App = () => (
       <Route path='/projects/:name' element={<Project />} />
 
       <Route path='/activities' element={<Activities />} />
+      <Route path='/activities/:name' element={<Activity />} />
       {/* <Route path="/*" element={<NotFound />} /> */}
     </Routes>
     <Footer />

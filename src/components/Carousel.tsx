@@ -3,9 +3,10 @@ import React, { FC, useState } from 'react';
 
 interface Props {
   images: { name: string; src: string }[];
-  wikiUrl: string;
+  wikiUrl?: string;
+  subMessage: boolean;
 }
-const Carousel: FC<Props> = ({ images, wikiUrl }) => {
+const Carousel: FC<Props> = ({ images, wikiUrl, subMessage }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -37,23 +38,25 @@ const Carousel: FC<Props> = ({ images, wikiUrl }) => {
           </div>
         </div>
       </div>
-      <div className='w-full top-6 relative flex items-center'>
-        <span className='text-sm'>
-          구현된 상세 내용은{' '}
-          <a
-            href={wikiUrl}
-            target='_blank'
-            rel='noreferrer'
-            className='underline font-bold hover:text-slate-800'
-          >
-            프로젝트 위키
-          </a>
-          에서 볼 수 있습니다
-        </span>
-        <div className='absolute right-0 px-1 text-center py-0.5 text-slate-700 bg-slate-200 rounded-md w-10 text-sm '>
-          {currentIndex + 1} / {images.length}
+      {subMessage && (
+        <div className='w-full top-6 relative flex items-center'>
+          <span className='text-sm'>
+            구현된 상세 내용은{' '}
+            <a
+              href={wikiUrl}
+              target='_blank'
+              rel='noreferrer'
+              className='underline font-bold hover:text-slate-800'
+            >
+              프로젝트 위키
+            </a>
+            에서 볼 수 있습니다
+          </span>
+          <div className='absolute right-0 px-1 text-center py-0.5 text-slate-700 bg-slate-200 rounded-md w-10 text-sm '>
+            {currentIndex + 1} / {images.length}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
