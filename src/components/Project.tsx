@@ -43,7 +43,7 @@ const Project: FC = () => {
                   <a
                     className='hover:text-slate-700 font-bold'
                     target='_blank'
-                    rel='noreferer'
+                    rel='noreferrer'
                     href={project.details.link.production}
                   >
                     프로덕션 페이지
@@ -51,7 +51,7 @@ const Project: FC = () => {
                   <a
                     className='hover:text-slate-700 font-bold'
                     target='_blank'
-                    rel='noreferer'
+                    rel='noreferrer'
                     href={project.details.link.wiki}
                   >
                     기능 상세보기
@@ -59,7 +59,7 @@ const Project: FC = () => {
                   <a
                     className='hover:text-slate-700 font-bold'
                     target='_blank'
-                    rel='noreferer'
+                    rel='noreferrer'
                     href={project.details.link.github}
                   >
                     GitHub

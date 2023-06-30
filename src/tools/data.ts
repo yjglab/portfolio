@@ -7,6 +7,7 @@ export const projectsDev = [
     date: 2023,
     skills: ['TypeScript', 'React', 'Next', 'Redux-Toolkit', 'TailwindCSS', 'Express', 'Sequelize', 'AWS'],
     subtitle: '소프트웨어 개발자와 기획자, 디자이너들의 소통 스퀘어',
+    thumb: `${process.env.PUBLIC_URL}/images/bloobolt_thumb.png`,
 
     details: {
       version: '0.2.0',
@@ -109,6 +110,7 @@ export const projectsDev = [
       'AWS',
     ],
     subtitle: '실시간 온라인 라이브 토크 메시지',
+    thumb: `${process.env.PUBLIC_URL}/images/blooways_thumb.png`,
 
     details: {
       version: '0.0.0',
@@ -192,6 +194,7 @@ export const projectsDev = [
     date: 2022,
     skills: ['JavaScript', 'JQuery', 'Express', 'Pug', 'SCSS', 'MongoDB'],
     subtitle: '전시 정보를 한 페이지에서 쉽게 확인할 수 있는 인터랙티브 웹 서비스',
+    thumb: `${process.env.PUBLIC_URL}/images/mug_thumb.png`,
 
     details: {
       version: '0.3.0',
@@ -259,6 +262,7 @@ export const projectsDev = [
     date: 2021,
     skills: ['JavaScript', 'JQuery', 'Express', 'Pug', 'SCSS', 'MongoDB'],
     subtitle: '티라미수 케이크 쇼핑몰 사이트',
+    thumb: `${process.env.PUBLIC_URL}/images/tira_thumb.png`,
 
     details: {
       version: '0.0.0',

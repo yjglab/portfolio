@@ -52,111 +52,43 @@ const Projects = () => {
 
       {category === 'development' ? (
         <main>
-          <div className='mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:max-w-7xl lg:px-8'>
-            <h2 className='text-2xl font-bold tracking-tight text-slate-700'>2023</h2>
+          {[2023, 2022, 2021].map((year) => (
+            <div key={year} className='mx-auto max-w-2xl px-4 py-12 sm:px-6 lg:max-w-7xl lg:px-8'>
+              <h2 className='text-2xl font-bold tracking-tight text-slate-700'>{year}</h2>
 
-            <div className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
-              {projectsDev
-                .filter((v) => v.date === 2023)
-                .map((project) => (
-                  <Link to={project.href} key={project.name} className=' group relative'>
-                    <div className='hover:scale-[101%] duration-100  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-slate-200 lg:aspect-none group-hover:opacity-75 lg:h-80'>
-                      <img
-                        src={project.imageSrc}
-                        alt={project.imageAlt}
-                        className='h-full w-full object-cover object-center lg:h-full lg:w-full'
-                      />
-                    </div>
-                    <div className='mt-4 flex justify-between'>
-                      <div className='w-full'>
-                        <h3 className='text-sm text-slate-700 flex justify-between items-center'>
-                          <span className='font-bold'>{project.name}</span>
-                          <span>{project.date}</span>
-                        </h3>
-                        <div className='mt-1.5 flex-wrap flex'>
-                          {project.skills.map((skill) => (
-                            <span key={skill} className='mb-1'>
-                              <Badge content={skill} />
-                            </span>
-                          ))}
-                        </div>
-                        <p className='mt-1.5 text-sm text-slate-700'>{project.subtitle}</p>
+              <div className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
+                {projectsDev
+                  .filter((v) => v.date === year)
+                  .map((project) => (
+                    <Link to={project.href} key={project.name} className=' group relative'>
+                      <div className='shadow-slate-200 shadow-lg hover:scale-[101%] duration-100  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-slate-200 lg:aspect-none hover:opacity-75 h-60'>
+                        <img
+                          src={project.thumb}
+                          alt={project.imageAlt}
+                          className=' object-cover object-center lg:h-auto lg:w-full'
+                        />
                       </div>
-                    </div>
-                  </Link>
-                ))}
-            </div>
-          </div>
-
-          <div className='mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:max-w-7xl lg:px-8'>
-            <h2 className='text-2xl font-bold tracking-tight text-slate-700'>2022</h2>
-            <div className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
-              {projectsDev
-                .filter((v) => v.date === 2022)
-                .map((project) => (
-                  <Link to={project.href} key={project.name} className=' group relative'>
-                    <div className='hover:scale-[101%] duration-100  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-slate-200 lg:aspect-none group-hover:opacity-75 lg:h-80'>
-                      <img
-                        src={project.imageSrc}
-                        alt={project.imageAlt}
-                        className='h-full w-full object-cover object-center lg:h-full lg:w-full'
-                      />
-                    </div>
-                    <div className='mt-4 flex justify-between'>
-                      <div className='w-full'>
-                        <h3 className='text-sm text-slate-700 flex justify-between items-center'>
-                          <span className='font-bold'>{project.name}</span>
-                          <span>{project.date}</span>
-                        </h3>
-                        <div className='mt-1.5 flex-wrap flex'>
-                          {project.skills.map((skill) => (
-                            <span key={skill} className='mb-1'>
-                              <Badge content={skill} />
-                            </span>
-                          ))}
+                      <div className='mt-4 flex justify-between'>
+                        <div className='w-full'>
+                          <h3 className='text-sm text-slate-700 flex justify-between items-center'>
+                            <span className='font-bold'>{project.name}</span>
+                            <span>{project.date}</span>
+                          </h3>
+                          <div className='mt-1.5 flex-wrap flex'>
+                            {project.skills.map((skill) => (
+                              <span key={skill} className='mb-1'>
+                                <Badge content={skill} />
+                              </span>
+                            ))}
+                          </div>
+                          <p className='mt-1.5 text-sm text-slate-700'>{project.subtitle}</p>
                         </div>
-                        <p className='mt-1.5 text-sm text-slate-700'>{project.subtitle}</p>
                       </div>
-                    </div>
-                  </Link>
-                ))}
+                    </Link>
+                  ))}
+              </div>
             </div>
-          </div>
-
-          <div className='mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:max-w-7xl lg:px-8'>
-            <h2 className='text-2xl font-bold tracking-tight text-slate-700'>2021</h2>
-            <div className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
-              {projectsDev
-                .filter((v) => v.date === 2021)
-                .map((project) => (
-                  <Link to={project.href} key={project.name} className=' group relative'>
-                    <div className='hover:scale-[101%] duration-100  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-slate-200 lg:aspect-none group-hover:opacity-75 lg:h-80'>
-                      <img
-                        src={project.imageSrc}
-                        alt={project.imageAlt}
-                        className='h-full w-full object-cover object-center lg:h-full lg:w-full'
-                      />
-                    </div>
-                    <div className='mt-4 flex justify-between'>
-                      <div className='w-full'>
-                        <h3 className='text-sm text-slate-700 flex justify-between items-center'>
-                          <span className='font-bold'>{project.name}</span>
-                          <span>{project.date}</span>
-                        </h3>
-                        <div className='mt-1.5 flex-wrap flex'>
-                          {project.skills.map((skill) => (
-                            <span key={skill} className='mb-1'>
-                              <Badge content={skill} />
-                            </span>
-                          ))}
-                        </div>
-                        <p className='mt-1.5 text-sm text-slate-700'>{project.subtitle}</p>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-            </div>
-          </div>
+          ))}
         </main>
       ) : (
         ''
