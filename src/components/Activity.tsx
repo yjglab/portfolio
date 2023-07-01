@@ -40,7 +40,13 @@ const Activity: FC = () => {
                 )}
                 <p className='flex gap-4 items-center text-sm'>
                   {activity.details.link.map((l, idx) => (
-                    <a className='hover:text-slate-700 font-bold' target='_blank' rel='noreferrer' href={l}>
+                    <a
+                      key={l}
+                      className='hover:text-slate-700 font-bold'
+                      target='_blank'
+                      rel='noreferrer'
+                      href={l}
+                    >
                       {`활동링크${idx + 1}`}
                     </a>
                   ))}

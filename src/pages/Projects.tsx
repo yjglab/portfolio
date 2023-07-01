@@ -61,7 +61,7 @@ const Projects = () => {
                   .filter((v) => v.date === year)
                   .map((project) => (
                     <Link to={project.href} key={project.name} className=' group relative'>
-                      <div className='shadow-slate-200 shadow-lg hover:scale-[101%] duration-100  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-slate-200 lg:aspect-none hover:opacity-75 h-60'>
+                      <div className='flex items-center shadow-slate-200 shadow-lg hover:scale-[101%] duration-100  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-slate-200 lg:aspect-none hover:opacity-75 h-60'>
                         <img
                           src={project.thumb}
                           alt={project.imageAlt}

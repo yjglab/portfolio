@@ -1,4 +1,3 @@
-import React, { useCallback, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { activities } from '../tools/data';
 
@@ -17,7 +16,7 @@ const Activities = () => {
 
       <main>
         {['완료된 활동', '진행중인 활동'].map((status) => (
-          <div className='mx-auto max-w-2xl px-4 py-12 sm:px-6 lg:max-w-7xl lg:px-8'>
+          <div key={status} className='mx-auto max-w-2xl px-4 py-12 sm:px-6 lg:max-w-7xl lg:px-8'>
             <h2 className='text-2xl font-bold tracking-tight text-slate-700'>{status}</h2>
 
             <div className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>

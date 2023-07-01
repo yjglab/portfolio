@@ -1,7 +1,42 @@
+import { AcademicCapIcon, CodeBracketIcon, LightBulbIcon, SignalIcon } from '@heroicons/react/24/outline';
+
 export const me = {
   name: 'Jaekyeong Yuk',
-  avatar: '',
+  title: '꼼꼼하며 정직한 웹 개발자',
+  description:
+    'React와 Express, Sequelize를 이용하여 완전한 웹 서비스를 개발하고 배포할 수 있으며 상태관리는 필요에 따라 Redux, SWR을 사용합니다. 디자인과 Tailwind, SCSS를 사용한 반응형 퍼블리싱을 문제없이 수행합니다. 0.01%의 오차도 남기지 않도록 섬세하게 작업하는 개발 스타일을 가지고 있으며 개발에 필요한 각 포지션의 역할을 이해하여 다방면으로 원활한 커뮤니케이션 능력을 갖추고자 합니다.',
+  informations: [
+    {
+      name: '전공',
+      description: '컴퓨터공학 / 시각디자인학 복수전공 학사',
+      links: {},
+      icon: AcademicCapIcon,
+    },
+    {
+      name: '기술 스택',
+      description: 'TypeScript, React, Redux, Next, TailwindCSS, SCSS, Pug, Express, Sequelize, Python, AWS',
+      links: {},
+      icon: CodeBracketIcon,
+    },
+    {
+      name: '채널',
+      description: '',
+      links: {
+        email: 'yjgdesign@gmail.com',
+        github: 'https://github.com/yjglab',
+        blog: 'https://yjg-lab.tistory.com',
+      },
+      icon: SignalIcon,
+    },
+    {
+      name: '목표',
+      description: '웹의 입구를 디자인하여 사용자들에게 세상을 여는 열쇠가 되자.',
+      links: {},
+      icon: LightBulbIcon,
+    },
+  ],
 };
+
 export const activities = [
   {
     status: '진행중인 활동',

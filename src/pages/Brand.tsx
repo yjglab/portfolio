@@ -4,9 +4,9 @@ const Brand = () => {
   return (
     <section className='min-h-screen items-center flex justify-center relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:px-8'>
       <div className='mx-auto max-w-2xl lg:max-w-5xl'>
-        <img className='mx-auto h-44' src={bloosLogoFull} alt='' />
+        <img className='mx-auto w-[90%] sm:w-[50%]' src={bloosLogoFull} alt='' />
         <figure className='mt-14'>
-          <blockquote className='text-center text-xl font-semibold leading-8 text-slate-700 sm:text-xl sm:leading-9'>
+          <blockquote className='text-center text-xl leading-8 text-slate-700 sm:text-xl sm:leading-9'>
             <p>
               Bloos는 안정성과 신뢰성을 상징하는 'Blue'와 발전과 성장을 도모하는 'Boost'를 연결한 저의 퍼스널
               브랜드입니다. <br />

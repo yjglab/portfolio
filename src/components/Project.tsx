@@ -30,16 +30,16 @@ const Project: FC = () => {
       <div className='bg-white'>
         <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 px-4 py-4 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8'>
           <div>
-            <p className=' text-slate-600'>
+            <div className=' text-slate-600'>
               <img
                 alt=''
                 src={project.details.banner}
                 className='ring-1 ring-slate-200 mb-5 rounded-md w-full'
               />
               {project.details.description}
-              <p className='mt-12 flex items-center text-slate-600'>
+              <div className='mt-12 flex items-center text-slate-600'>
                 <span className='font-medium text-slate-700 mr-4'>Link</span>
-                <p className='flex gap-4 items-center text-sm'>
+                <div className='flex gap-4 items-center text-sm'>
                   <a
                     className='hover:text-slate-700 font-bold'
                     target='_blank'
@@ -64,9 +64,9 @@ const Project: FC = () => {
                   >
                     GitHub
                   </a>
-                </p>
-              </p>
-            </p>
+                </div>
+              </div>
+            </div>
 
             <dl className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8'>
               <div className='border-t border-slate-200 pt-4'>
@@ -89,7 +89,9 @@ const Project: FC = () => {
                     </dt>{' '}
                     <dd className='inline'>
                       {implement.content.map((ct) => (
-                        <span className='mr-1.5'>{ct},</span>
+                        <span key={ct} className='mr-1.5'>
+                          {ct},
+                        </span>
                       ))}
                     </dd>
                   </div>
