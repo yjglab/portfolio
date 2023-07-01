@@ -38,7 +38,7 @@ const Project: FC = () => {
               />
               {project.details.description}
               <p className='mt-12 flex items-center text-slate-600'>
-                <span className='font-medium text-slate-900 mr-4'>Link</span>
+                <span className='font-medium text-slate-700 mr-4'>Link</span>
                 <p className='flex gap-4 items-center text-sm'>
                   <a
                     className='hover:text-slate-700 font-bold'
@@ -70,10 +70,10 @@ const Project: FC = () => {
 
             <dl className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8'>
               <div className='border-t border-slate-200 pt-4'>
-                <dt className='font-medium text-slate-900 mb-3'>기술 태그</dt>
+                <dt className='font-medium text-slate-700 mb-3'>기술 태그</dt>
                 {project.details.skills.map((skill) => (
                   <div key={skill.name} className='my-3 relative text-slate-600 text-sm'>
-                    <dt className='inline bg-slate-200 px-2 py-0.5 rounded-md mr-1 text-slate-900'>
+                    <dt className='inline bg-slate-200 px-2 py-0.5 rounded-md mr-1 text-slate-700'>
                       {skill.name}
                     </dt>{' '}
                     <dd className='inline'>{skill.content}</dd>
@@ -81,10 +81,10 @@ const Project: FC = () => {
                 ))}
               </div>
               <div className='border-t border-slate-200 pt-4'>
-                <dt className='font-medium text-slate-900 mb-3'>구현된 기능</dt>
+                <dt className='font-medium text-slate-700 mb-3'>구현된 기능</dt>
                 {project.details.implements.map((implement) => (
                   <div key={implement.name} className='my-3 relative text-slate-600 text-sm'>
-                    <dt className='inline bg-slate-200 px-2 py-0.5 rounded-md mr-1 text-slate-900'>
+                    <dt className='inline bg-slate-200 px-2 py-0.5 rounded-md mr-1 text-slate-700'>
                       {implement.name}
                     </dt>{' '}
                     <dd className='inline'>

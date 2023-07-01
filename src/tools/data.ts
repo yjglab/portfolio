@@ -1,3 +1,7 @@
+export const me = {
+  name: 'Jaekyeong Yuk',
+  avatar: '',
+};
 export const activities = [
   {
     status: '진행중인 활동',

@@ -36,7 +36,7 @@ const Activity: FC = () => {
               {activity.details.description}
               <p className='mt-12 flex items-center text-slate-600'>
                 {activity.details.link.length !== 0 && (
-                  <span className='font-medium text-slate-900 mr-4'>Link</span>
+                  <span className='font-medium text-slate-700 mr-4'>Link</span>
                 )}
                 <p className='flex gap-4 items-center text-sm'>
                   {activity.details.link.map((l, idx) => (

@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Badge from '../../components/Badge';
-import DropMenu from '../../components/DropMenu';
+import Badge from '../components/Badge';
+import DropMenu from '../components/DropMenu';
 import { Menu } from '@headlessui/react';
-import { projectsDev } from '../../tools/data';
+import { projectsDev } from '../tools/data';
 
 const Projects = () => {
   const [category, setCategory] = useState('development');
