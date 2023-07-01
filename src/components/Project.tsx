@@ -1,12 +1,15 @@
-import { FC, useEffect } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { projectsDev } from '../tools/data';
 import Badge from './Badge';
 import Carousel from './Carousel';
+import { ArrowPathIcon } from '@heroicons/react/20/solid';
 
 const Project: FC = () => {
   const { name } = useParams();
   const project = projectsDev.filter((v) => v.href === name)[0];
+  const [bannerLoaded, setBannerLoaded] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -31,10 +34,17 @@ const Project: FC = () => {
         <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 px-4 py-4 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8'>
           <div>
             <div className=' text-slate-600'>
+              {!bannerLoaded && (
+                <div className='rounded-md justify-center text-sm bg-slate-200 p-3 animate-pulse flex items-center'>
+                  이미지를 불러오는 중입니다
+                  <ArrowPathIcon className='w-4 animate-spin ml-1' />
+                </div>
+              )}
               <img
                 alt=''
                 src={project.details.banner}
-                className='ring-1 ring-slate-200 mb-5 rounded-md w-full'
+                onLoad={() => setBannerLoaded(true)}
+                className='w-full top-0 ring-1 ring-slate-200 mb-5 rounded-md'
               />
               {project.details.description}
               <div className='mt-12 flex items-center text-slate-600'>

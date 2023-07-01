@@ -1,4 +1,5 @@
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/20/solid';
+import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import React, { FC, useState } from 'react';
 
 interface Props {
@@ -8,6 +9,7 @@ interface Props {
 }
 const Carousel: FC<Props> = ({ images, wikiUrl, subMessage }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -25,9 +27,16 @@ const Carousel: FC<Props> = ({ images, wikiUrl, subMessage }) => {
     <div className='text-slate-600'>
       <div className=' flex items-center w-full group '>
         <div className='w-full  h-auto relative'>
+          {!imageLoaded && (
+            <div className='h-44 rounded-md justify-center text-sm bg-slate-200 p-3 animate-pulse flex items-center'>
+              이미지를 불러오는 중입니다
+              <ArrowPathIcon className='w-4 animate-spin ml-1' />
+            </div>
+          )}
           <img
             alt=''
             src={images[currentIndex].src}
+            onLoad={() => setImageLoaded(true)}
             className='shadow-slate-300 shadow-lg w-full rounded-md'
           />
           <div className='bg-slate-400/80 hover:bg-slate-600/80 p-1 sm:hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-[5%]  rounded-full  text-white cursor-pointer'>
