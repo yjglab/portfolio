@@ -34,7 +34,7 @@ const Projects = () => {
                 </button>
               )}
             </Menu.Item>
-            <Menu.Item>
+            {/* <Menu.Item>
               {({ active }) => (
                 <button
                   type='button'
@@ -46,7 +46,7 @@ const Projects = () => {
                   디자인
                 </button>
               )}
-            </Menu.Item>
+            </Menu.Item> */}
           </DropMenu>
         </div>
         <div className='flex items-center'></div>

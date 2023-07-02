@@ -9,6 +9,9 @@ const Home = () => {
         <div className='mx-auto max-w-2xl lg:text-center'>
           <h2 className='text-base font-semibold leading-7 text-slate-600'>{me.title}</h2>
           <p className='mt-2 text-3xl font-bold tracking-tight text-slate-700 sm:text-4xl'>{me.name}</p>
+          <div className='w-36 rounded-full overflow-hidden mx-auto my-3 shadow-slate-200 shadow-lg'>
+            <img src={me.avatar} alt='avatar' className='object-cover scale-150 relative top-2' />
+          </div>
 
           <p className='mt-6 text-lg leading-8 text-slate-600'>{me.description}</p>
         </div>

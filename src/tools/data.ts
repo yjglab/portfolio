@@ -1,8 +1,10 @@
 import { AcademicCapIcon, CodeBracketIcon, LightBulbIcon, SignalIcon } from '@heroicons/react/24/outline';
+import { avatar } from './global';
 
 export const me = {
   name: 'Jaekyeong Yuk',
-  title: '꼼꼼하며 정직한 웹 개발자',
+  title: '꼼꼼하고 정직한 웹 개발자',
+  avatar: avatar,
   description:
     'React와 Express, Sequelize를 이용하여 완전한 웹 서비스를 개발하고 배포할 수 있으며 상태관리는 필요에 따라 Redux, SWR을 사용합니다. 디자인과 Tailwind, SCSS를 사용한 반응형 퍼블리싱을 문제없이 수행합니다. 0.01%의 오차도 남기지 않도록 섬세하게 작업하는 개발 스타일을 가지고 있으며 개발에 필요한 각 포지션의 역할을 이해하여 다방면으로 원활한 커뮤니케이션 능력을 갖추고자 합니다.',
   informations: [
@@ -425,6 +427,60 @@ export const projectsDev = [
         {
           name: '4',
           src: 'https://user-images.githubusercontent.com/70316567/247320934-58ee70db-4fc0-4210-8e4d-cfe89a7b5691.gif',
+        },
+      ],
+    },
+  },
+];
+
+export const projectsDesign = [
+  {
+    name: '',
+    href: '',
+    imageSrc: '',
+    imageAlt: '',
+    date: 202,
+    skills: [''],
+    subtitle: '',
+    thumb: `${process.env.PUBLIC_URL}/images/a.png`,
+
+    details: {
+      version: '0.0.0',
+      banner: '',
+      link: {
+        production: '',
+        github: '',
+        wiki: '',
+      },
+      skills: [
+        {
+          name: '',
+          content: '',
+        },
+        {
+          name: '',
+          content: '',
+        },
+        {
+          name: '',
+          content: '',
+        },
+        {
+          name: '',
+          content: '',
+        },
+      ],
+      description: '',
+      implements: [
+        {
+          name: '',
+          content: [''],
+        },
+      ],
+      images: [
+        {
+          name: '1',
+          src: '',
         },
       ],
     },
