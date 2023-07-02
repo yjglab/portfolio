@@ -1,12 +1,14 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Badge from '../components/Badge';
 import DropMenu from '../components/DropMenu';
 import { Menu } from '@headlessui/react';
 import { projectsDev } from '../tools/data';
+import ThumbLoader from '../components/ThumbLoader';
 
 const Projects = () => {
   const [category, setCategory] = useState('development');
+  const [thumbLoaded, setThumbLoaded] = useState(false);
 
   return (
     <div className='min-h-screen'>
@@ -61,11 +63,13 @@ const Projects = () => {
                   .filter((v) => v.date === year)
                   .map((project) => (
                     <Link to={project.href} key={project.name} className=' group relative'>
-                      <div className='flex items-center shadow-slate-200 shadow-lg hover:scale-[101%] duration-100  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-slate-200 lg:aspect-none hover:opacity-75 h-60'>
+                      <div className='flex items-center shadow-slate-200 shadow-lg hover:scale-[101%] duration-100  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md hover:opacity-75 h-60'>
+                        {!thumbLoaded && <ThumbLoader />}
                         <img
                           src={project.thumb}
                           alt={project.imageAlt}
-                          className=' object-cover object-center lg:h-auto lg:w-full'
+                          onLoad={() => setThumbLoaded(true)}
+                          className=' object-cover object-center'
                         />
                       </div>
                       <div className='mt-4 flex justify-between'>

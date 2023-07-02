@@ -58,7 +58,7 @@ const Activity: FC = () => {
           </div>
           {activity.details.images && (
             <div className='w-full relative'>
-              <Carousel subMessage={false} images={activity.details.images} />
+              <Carousel subMessage={false} counter={true} images={activity.details.images} />
             </div>
           )}
         </div>

@@ -52,7 +52,20 @@ export const activities = [
       link: ['https://yjg-lab.tistory.com'],
       description:
         '개발 공부를 시작한 후부터 지금까지 지속적으로 공부했던 내용을 기록해두는 개인 블로그입니다. 주로 CS지식, Python과 JavaScript로 풀이한 알고리즘 문제 풀이 등을 기록하고 있으며 언제 어디서든 기록한 내용들을 복습하기 위해 관리하고 있습니다.',
-      images: [{ name: '', src: '' }],
+      images: [
+        {
+          name: '1',
+          src: 'https://github.com/yjglab/portfolio/assets/70316567/3e907448-516c-433a-bbd1-7e3ccd647bd0',
+        },
+        {
+          name: '2',
+          src: 'https://github.com/yjglab/portfolio/assets/70316567/4d3176a5-ddef-461a-9031-4ede9a726a17',
+        },
+        {
+          name: '3',
+          src: 'https://github.com/yjglab/portfolio/assets/70316567/0f8ad0de-6c1c-40c6-aba7-5812cf6c9e61',
+        },
+      ],
     },
   },
   {
@@ -69,24 +82,7 @@ export const activities = [
       link: [],
       description:
         '전주 ICT 교육사업부에서 진행한 코딩경진대회입니다. 총 2시간의 제한 시간 내로 원하는 언어를 골라 주어진 3개의 알고리즘 문제를 풀어내는 것이 대회 목표입니다. 가지고 있던 코딩 능력을 발휘해볼 소중한 기회였으며 대상이라는 값진 성과를 만들었습니다.',
-      images: [
-        {
-          name: '1',
-          src: 'https://user-images.githubusercontent.com/70316567/244946346-3dfd6ee7-5051-45f9-8596-f566d2f669e4.gif',
-        },
-        {
-          name: '2',
-          src: 'https://user-images.githubusercontent.com/70316567/244888544-af3068a5-a581-4014-b604-d9e831ec79da.gif',
-        },
-        {
-          name: '3',
-          src: 'https://user-images.githubusercontent.com/70316567/244886246-3d82eddb-7fe4-4441-8346-b17354806997.gif',
-        },
-        {
-          name: '프로필',
-          src: 'https://user-images.githubusercontent.com/70316567/244889548-238d3104-af3c-4de1-82bc-2639540840ea.gif',
-        },
-      ],
+      images: [{ name: '1', src: '' }],
     },
   },
   {
@@ -108,22 +104,10 @@ export const activities = [
       description:
         '빅데이터 과목을 수강하면서 데이터 분석 분야에 관심이 생겨, 파이썬 모듈 강의를 제작하였습니다. 이 강의는 NumPy 모듈의 메서드 활용법을 학습할 수 있는 내용으로 구성되었습니다. 강의는 인프런에 업로드되어 있으며, 프로그래머스 스쿨에서도 업로드 제안이 들어와 내용을 업데이트하고 추가로 업로드하였습니다. 현재까지 약 2,800여 명이 신청하여 도움을 받아갔습니다. 개인적으로, 내가 알고 있는 내용을 다른 사람에게 설명해보는 것이 최고의 학습법이라고 생각합니다.',
       images: [
-        {
-          name: '1',
-          src: 'https://user-images.githubusercontent.com/70316567/244946346-3dfd6ee7-5051-45f9-8596-f566d2f669e4.gif',
-        },
-        {
-          name: '2',
-          src: 'https://user-images.githubusercontent.com/70316567/244888544-af3068a5-a581-4014-b604-d9e831ec79da.gif',
-        },
-        {
-          name: '3',
-          src: 'https://user-images.githubusercontent.com/70316567/244886246-3d82eddb-7fe4-4441-8346-b17354806997.gif',
-        },
-        {
-          name: '프로필',
-          src: 'https://user-images.githubusercontent.com/70316567/244889548-238d3104-af3c-4de1-82bc-2639540840ea.gif',
-        },
+        { name: '1', src: '' },
+        { name: '2', src: '' },
+        { name: '3', src: '' },
+        { name: '4', src: '' },
       ],
     },
   },

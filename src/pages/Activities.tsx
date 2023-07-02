@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
 import { activities } from '../tools/data';
+import ThumbLoader from '../components/ThumbLoader';
+import { useState } from 'react';
 
 const Activities = () => {
+  const [thumbLoaded, setThumbLoaded] = useState(false);
+
   return (
     <div className='min-h-screen'>
       <header className='mx-auto max-w-2xl px-4 py-3 sm:px-6  lg:max-w-7xl lg:px-8'>
@@ -24,11 +28,13 @@ const Activities = () => {
                 .filter((v) => v.status === status)
                 .map((activity) => (
                   <Link to={activity.href} key={activity.name} className=' group relative'>
-                    <div className='shadow-slate-200 shadow-lg hover:scale-[101%] duration-100  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-slate-200  hover:opacity-75'>
+                    <div className='flex items-center shadow-slate-200 shadow-lg hover:scale-[101%] duration-100  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md hover:opacity-75 h-60'>
+                      {!thumbLoaded && <ThumbLoader />}
                       <img
                         src={activity.thumb}
                         alt={activity.imageAlt}
-                        className=' object-cover object-center '
+                        onLoad={() => setThumbLoaded(true)}
+                        className=' object-cover object-center'
                       />
                     </div>
                     <div className='mt-4 flex justify-between'>

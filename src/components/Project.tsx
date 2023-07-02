@@ -4,6 +4,7 @@ import { projectsDev } from '../tools/data';
 import Badge from './Badge';
 import Carousel from './Carousel';
 import { ArrowPathIcon } from '@heroicons/react/20/solid';
+import ImageLoader from './ImageLoader';
 
 const Project: FC = () => {
   const { name } = useParams();
@@ -34,12 +35,7 @@ const Project: FC = () => {
         <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 px-4 py-4 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8'>
           <div>
             <div className=' text-slate-600'>
-              {!bannerLoaded && (
-                <div className='rounded-md justify-center text-sm bg-slate-200 p-3 animate-pulse flex items-center'>
-                  이미지를 불러오는 중입니다
-                  <ArrowPathIcon className='w-4 animate-spin ml-1' />
-                </div>
-              )}
+              {!bannerLoaded && <ImageLoader />}
               <img
                 alt=''
                 src={project.details.banner}
@@ -110,7 +106,12 @@ const Project: FC = () => {
             </dl>
           </div>
           <div className='w-full relative'>
-            <Carousel subMessage={true} images={project.details.images} wikiUrl={project.details.link.wiki} />
+            <Carousel
+              subMessage={true}
+              counter={true}
+              images={project.details.images}
+              wikiUrl={project.details.link.wiki}
+            />
           </div>
         </div>
       </div>

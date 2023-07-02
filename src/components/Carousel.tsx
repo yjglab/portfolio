@@ -1,13 +1,15 @@
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/20/solid';
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import React, { FC, useState } from 'react';
+import ImageLoader from './ImageLoader';
 
 interface Props {
   images: { name: string; src: string }[];
   wikiUrl?: string;
   subMessage: boolean;
+  counter: boolean;
 }
-const Carousel: FC<Props> = ({ images, wikiUrl, subMessage }) => {
+const Carousel: FC<Props> = ({ images, wikiUrl, subMessage, counter }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -27,12 +29,7 @@ const Carousel: FC<Props> = ({ images, wikiUrl, subMessage }) => {
     <div className='text-slate-600'>
       <div className=' flex items-center w-full group '>
         <div className='w-full  h-auto relative'>
-          {!imageLoaded && (
-            <div className='h-44 rounded-md justify-center text-sm bg-slate-200 p-3 animate-pulse flex items-center'>
-              이미지를 불러오는 중입니다
-              <ArrowPathIcon className='w-4 animate-spin ml-1' />
-            </div>
-          )}
+          {!imageLoaded && <ImageLoader />}
           <img
             alt=''
             src={images[currentIndex].src}
@@ -47,8 +44,8 @@ const Carousel: FC<Props> = ({ images, wikiUrl, subMessage }) => {
           </div>
         </div>
       </div>
-      {subMessage && (
-        <div className='w-full top-6 relative flex items-center'>
+      <div className='w-full top-6 relative flex items-center'>
+        {subMessage && (
           <span className='text-sm'>
             구현된 상세 내용은{' '}
             <a
@@ -61,11 +58,13 @@ const Carousel: FC<Props> = ({ images, wikiUrl, subMessage }) => {
             </a>
             에서 볼 수 있습니다
           </span>
+        )}
+        {counter && (
           <div className='absolute right-0 px-1 text-center py-0.5 text-slate-700 bg-slate-200 rounded-md w-10 text-sm '>
             {currentIndex + 1} / {images.length}
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
