@@ -6,14 +6,14 @@ const Home = () => {
   return (
     <div className='bg-white py-24 sm:py-32 mt-10'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-        <div className='mx-auto max-w-2xl lg:text-center'>
+        <div className='mx-auto max-w-2xl text-center'>
           <h2 className='text-base font-semibold leading-7 text-slate-600'>{me.title}</h2>
           <p className='mt-2 text-3xl font-bold tracking-tight text-slate-700 sm:text-4xl'>{me.name}</p>
-          <div className='w-36 rounded-full overflow-hidden mx-auto my-3 shadow-slate-200 shadow-lg'>
+          <div className='w-36 rounded-full overflow-hidden mx-auto my-10 shadow-slate-200 shadow-lg'>
             <img src={me.avatar} alt='avatar' className='object-cover scale-150 relative top-2' />
           </div>
 
-          <p className='mt-6 text-lg leading-8 text-slate-600'>{me.description}</p>
+          <p className='lg:text-center text-left mt-6 text-lg leading-8 text-slate-600'>{me.description}</p>
         </div>
 
         <div className='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl'>

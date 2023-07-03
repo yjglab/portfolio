@@ -9,7 +9,6 @@ const navigation = {
   categories: [],
   pages: [
     { name: 'About', href: '/' },
-    // { name: 'Skills', href: '/skills' },
     { name: 'Projects', href: '/projects' },
     { name: 'Activities', href: '/activities' },
     { name: 'Personal Brand', href: '/brand' },
@@ -94,6 +93,7 @@ const NavBar: FC = () => {
               {/* Logo */}
               <div className='flex ml-2'>
                 <Link className='flex items-center' to='/'>
+                  <img src={bloosLogo} alt='logo' className='w-5' />
                   <span className='ml-1.5 text-slate-700 font-bold text-lg'>Jaekyeong Yuk</span>
                 </Link>
               </div>

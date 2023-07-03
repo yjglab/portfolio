@@ -84,7 +84,12 @@ export const activities = [
       link: [],
       description:
         '전주 ICT 교육사업부에서 진행한 코딩경진대회입니다. 총 2시간의 제한 시간 내로 원하는 언어를 골라 주어진 3개의 알고리즘 문제를 풀어내는 것이 대회 목표입니다. 가지고 있던 코딩 능력을 발휘해볼 소중한 기회였으며 대상이라는 값진 성과를 만들었습니다.',
-      images: [{ name: '1', src: '' }],
+      images: [
+        {
+          name: '1',
+          src: 'https://github.com/yjglab/portfolio/assets/70316567/ff426520-c7ab-4f2c-beb3-99bd1ea84294',
+        },
+      ],
     },
   },
   {
@@ -106,10 +111,18 @@ export const activities = [
       description:
         '빅데이터 과목을 수강하면서 데이터 분석 분야에 관심이 생겨, 파이썬 모듈 강의를 제작하였습니다. 이 강의는 NumPy 모듈의 메서드 활용법을 학습할 수 있는 내용으로 구성되었습니다. 강의는 인프런에 업로드되어 있으며, 프로그래머스 스쿨에서도 업로드 제안이 들어와 내용을 업데이트하고 추가로 업로드하였습니다. 현재까지 약 2,800여 명이 신청하여 도움을 받아갔습니다. 개인적으로, 내가 알고 있는 내용을 다른 사람에게 설명해보는 것이 최고의 학습법이라고 생각합니다.',
       images: [
-        { name: '1', src: '' },
-        { name: '2', src: '' },
-        { name: '3', src: '' },
-        { name: '4', src: '' },
+        {
+          name: '1',
+          src: 'https://github.com/yjglab/portfolio/assets/70316567/90e0556d-cae1-4b35-9db9-0f2a0c6f17af',
+        },
+        {
+          name: '2',
+          src: 'https://github.com/yjglab/portfolio/assets/70316567/ccf665a5-d3da-4c02-b1c6-ba8c9c1afcdd',
+        },
+        {
+          name: '3',
+          src: 'https://github.com/yjglab/portfolio/assets/70316567/116afb65-734a-4b3f-b60c-9359962296b2',
+        },
       ],
     },
   },
@@ -256,7 +269,7 @@ export const projectsDev = [
         },
       ],
       description:
-        'BlooWays는 소켓 통신을 활용하여 1대1 또는 다수의 멤버들과 실시간 라이브 메시지를 주고받을 수 있는 서비스입니다. 블루웨이와 에리어는 각각 크고 작은 개념의 대화 공간을 의미하며, 사용자는 여러 개의 대화 공간을 생성하고 원하는 멤버를 초대하여 자신과 유사한 성향을 가진 멤버들과 소통할 수 있습니다.',
+        'BlooWays는 소켓 통신을 활용하여 1대1 또는 다수의 멤버들과 실시간 라이브 메시지를 주고받을 수 있는 서비스입니다. 블루웨이와 에리어는 각각 크고 작은 개념의 대화 공간이며, 사용자는 여러 개의 대화 공간을 생성하고 원하는 멤버를 초대하여 자신과 유사한 성향을 가진 멤버들과 소통할 수 있습니다.',
       implements: [
         {
           name: '사용자',
