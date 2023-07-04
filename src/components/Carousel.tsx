@@ -30,7 +30,7 @@ const Carousel: FC<Props> = ({ images, wikiUrl, subMessage, counter }) => {
     <div className='text-slate-600'>
       <div className=' flex items-center w-full group '>
         <div className='w-full  h-auto relative'>
-          {!imageLoaded && <ImageLoader />}
+          {imageLoaded && <ImageLoader />}
           <img
             alt={images[currentIndex].src}
             src={images[currentIndex].src}

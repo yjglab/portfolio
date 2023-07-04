@@ -34,7 +34,7 @@ const Project: FC = () => {
         <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 px-4 py-4 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8'>
           <div>
             <div className='relative text-slate-600'>
-              {!bannerLoaded && <ImageLoader />}
+              {bannerLoaded && <ImageLoader />}
               <img
                 alt={project.details.banner}
                 src={project.details.banner}

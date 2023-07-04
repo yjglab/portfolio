@@ -63,13 +63,13 @@ const Projects = () => {
                   .filter((v) => v.date === year)
                   .map((project) => (
                     <Link to={project.href} key={project.name} className=' group relative'>
-                      <div className='ring-1 ring-slate-200 flex items-center shadow-slate-200 shadow-lg hover:scale-[101%] duration-100  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md hover:opacity-75 h-60'>
+                      <div className='relative ring-1 ring-slate-200 flex items-center shadow-slate-200 shadow-lg hover:scale-[101%] duration-100  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md hover:opacity-75 h-60'>
                         {!thumbLoaded && <ThumbLoader />}
                         <img
                           src={project.thumb}
                           alt={project.imageAlt}
                           onLoad={() => setThumbLoaded(true)}
-                          className=' object-cover object-center'
+                          className='object-cover object-center'
                         />
                       </div>
                       <div className='mt-4 flex justify-between'>
