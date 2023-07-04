@@ -1,11 +1,14 @@
-import { FC, useEffect } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { activities } from '../tools/data';
 import Carousel from './Carousel';
+import ImageLoader from './ImageLoader';
 
 const Activity: FC = () => {
   const { name } = useParams();
   const activity = activities.filter((v) => v.href === name)[0];
+  const [bannerLoaded, setBannerLoaded] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -27,11 +30,13 @@ const Activity: FC = () => {
       <div className='bg-white'>
         <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 px-4 py-4 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8'>
           <div>
-            <p className=' text-slate-600'>
+            <div className='relative text-slate-600'>
+              {!bannerLoaded && activity.details.banner && <ImageLoader />}
               <img
-                alt=''
+                alt={activity.details.banner}
                 src={activity.details.banner}
-                className='ring-1 ring-slate-200 mb-5 rounded-md w-full'
+                onLoad={() => setBannerLoaded(true)}
+                className='w-full top-0 ring-1 ring-slate-200 mb-5 rounded-md'
               />
               {activity.details.description}
               <p className='mt-12 flex items-center text-slate-600'>
@@ -52,7 +57,7 @@ const Activity: FC = () => {
                   ))}
                 </p>
               </p>
-            </p>
+            </div>
 
             <dl className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8'></dl>
           </div>
