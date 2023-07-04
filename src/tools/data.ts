@@ -1,4 +1,4 @@
-import { AcademicCapIcon, CodeBracketIcon, LightBulbIcon, SignalIcon } from '@heroicons/react/24/outline';
+import { AcademicCapIcon, BeakerIcon, CodeBracketIcon, SignalIcon } from '@heroicons/react/24/outline';
 import { avatar } from './global';
 
 export const me = {
@@ -31,10 +31,10 @@ export const me = {
       icon: SignalIcon,
     },
     {
-      name: '목표',
-      description: '웹의 입구를 디자인하여 사용자들에게 세상을 여는 열쇠가 되자.',
+      name: '타입',
+      description: '성실성, 우직함, 용감함, 지속성, 깔끔함',
       links: {},
-      icon: LightBulbIcon,
+      icon: BeakerIcon,
     },
   ],
 };
