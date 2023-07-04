@@ -1,6 +1,5 @@
 import Badge from '../components/Badge';
 import { me } from '../tools/data';
-import { avatar } from '../tools/global';
 
 const Home = () => {
   return (

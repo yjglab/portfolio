@@ -1,5 +1,4 @@
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/20/solid';
-import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import React, { FC, useState } from 'react';
 import ImageLoader from './ImageLoader';
 
@@ -14,12 +13,14 @@ const Carousel: FC<Props> = ({ images, wikiUrl, subMessage, counter }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const prevSlide = () => {
+    setImageLoaded(false);
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
   const nextSlide = () => {
+    setImageLoaded(false);
     const isLastSlide = currentIndex === images.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
@@ -31,10 +32,12 @@ const Carousel: FC<Props> = ({ images, wikiUrl, subMessage, counter }) => {
         <div className='w-full  h-auto relative'>
           {!imageLoaded && <ImageLoader />}
           <img
-            alt=''
+            alt={images[currentIndex].src}
             src={images[currentIndex].src}
             onLoad={() => setImageLoaded(true)}
-            className='shadow-slate-300 shadow-lg w-full rounded-md'
+            className={`${
+              !imageLoaded && 'opacity-50 grayscale'
+            } shadow-slate-300 shadow-lg w-full rounded-md`}
           />
           <div className='bg-slate-400/80 hover:bg-slate-600/80 p-1 sm:hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-[5%]  rounded-full  text-white cursor-pointer'>
             <ArrowLeftIcon onClick={prevSlide} className=' w-5 h-5   ' />

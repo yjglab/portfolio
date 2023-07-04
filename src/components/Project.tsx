@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { projectsDev } from '../tools/data';
 import Badge from './Badge';
 import Carousel from './Carousel';
-import { ArrowPathIcon } from '@heroicons/react/20/solid';
 import ImageLoader from './ImageLoader';
 
 const Project: FC = () => {
@@ -34,10 +33,10 @@ const Project: FC = () => {
       <div className='bg-white'>
         <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 px-4 py-4 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8'>
           <div>
-            <div className=' text-slate-600'>
+            <div className='relative text-slate-600'>
               {!bannerLoaded && <ImageLoader />}
               <img
-                alt=''
+                alt={project.details.banner}
                 src={project.details.banner}
                 onLoad={() => setBannerLoaded(true)}
                 className='w-full top-0 ring-1 ring-slate-200 mb-5 rounded-md'
