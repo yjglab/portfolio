@@ -8,8 +8,8 @@ const Brand = () => {
         <figure className='mt-14'>
           <blockquote className='text-center text-xl leading-8 text-slate-700 sm:text-xl sm:leading-9'>
             <p>
-              Bloos는 안정성과 신뢰성을 상징하는 'Blue'와 발전과 성장을 도모하는 'Boost'를 연결한 저의 퍼스널
-              브랜드입니다. <br />
+              Bloos는 안정성과 신뢰성을 상징하는 &apos;Blue&apos;와 발전과 성장을 도모하는 &apos;Boost&apos;를
+              연결한 저의 퍼스널 브랜드입니다. <br />
               저는 안정적이고 활발한 성장과 발전을 추구하며, 저의 서비스를 통해 사용자들에게 지속적인 혁신과
               가치를 전달하고자 합니다
             </p>

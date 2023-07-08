@@ -32,7 +32,7 @@ export const me = {
     },
     {
       name: '타입',
-      description: '성실성, 우직함, 용감함, 지속성, 깔끔함',
+      description: '성실성, 우직함, 끈기, 지속성, 깔끔함',
       links: {},
       icon: BeakerIcon,
     },

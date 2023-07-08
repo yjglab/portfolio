@@ -1,6 +1,5 @@
-import React, { FC, useCallback } from 'react';
-import { Fragment, useState } from 'react';
-import { Dialog, Menu, Popover, Transition } from '@headlessui/react';
+import React, { Fragment, useState, FC, useCallback, useEffect } from 'react';
+import { Dialog, Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 import { bloosLogo, bloosLogoFull } from '../tools/global';
@@ -17,11 +16,29 @@ const navigation = {
 
 const NavBar: FC = () => {
   const [open, setOpen] = useState(false);
+  const [navOn, setNavOn] = useState(false);
+
   const onClose = useCallback(() => {
     setOpen(false);
   }, []);
+
+  useEffect(() => {
+    function onScreenScroll() {
+      if (window.scrollY + document.documentElement.clientHeight > 1000) {
+        setNavOn(true);
+      } else {
+        setNavOn(false);
+      }
+    }
+
+    window.addEventListener('scroll', onScreenScroll);
+    return () => {
+      window.removeEventListener('scroll', onScreenScroll);
+    };
+  }, []);
+
   return (
-    <div id='navbar' className='fixed top-0 w-full z-50 bg-white shadow-lg shadow-slate-300/30'>
+    <div id='navbar' className='fixed top-0 w-full z-50 shadow-lg shadow-slate-300/30'>
       {/* 모바일 */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as='div' className='relative md:hidden' onClose={setOpen}>
@@ -85,7 +102,7 @@ const NavBar: FC = () => {
         </Dialog>
       </Transition.Root>
 
-      <header className='relative bg-white'>
+      <header className={`${navOn ? 'bg-white/50 backdrop-blur-sm' : 'bg-white'} relative duration-200`}>
         <nav aria-label='Top' className='mx-auto max-w-7xl px-4 sm:px-6 md:px-8'>
           <div className='relative'>
             {/* height */}

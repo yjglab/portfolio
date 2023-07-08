@@ -3,7 +3,7 @@ import React, { FC, useState } from 'react';
 import ImageLoader from './ImageLoader';
 
 interface Props {
-  images: { name: string; src: string }[];
+  images: Array<{ name: string; src: string }>;
   wikiUrl?: string;
   subMessage: boolean;
   counter: boolean;

@@ -69,7 +69,7 @@ const Projects = () => {
                           src={project.thumb}
                           alt={project.imageAlt}
                           onLoad={() => setThumbLoaded(true)}
-                          className='object-cover object-center'
+                          className=' object-cover object-center'
                         />
                       </div>
                       <div className='mt-4 flex justify-between'>
