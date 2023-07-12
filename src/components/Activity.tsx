@@ -39,15 +39,15 @@ const Activity: FC = () => {
                 className='w-full top-0 ring-1 ring-slate-200 mb-5 rounded-md'
               />
               {activity.details.description}
-              <p className='mt-12 flex items-center text-slate-600'>
+              <div className='mt-12 flex items-center text-slate-600'>
                 {activity.details.link.length !== 0 && (
                   <span className='font-medium text-slate-700 mr-4'>Link</span>
                 )}
-                <p className='flex gap-4 items-center text-sm'>
+                <div className='flex gap-4 items-center text-sm'>
                   {activity.details.link.map((l, idx) => (
                     <a
                       key={l}
-                      className='hover:text-slate-700 font-bold'
+                      className='hover:text-slate-900 font-bold'
                       target='_blank'
                       rel='noreferrer'
                       href={l}
@@ -55,8 +55,8 @@ const Activity: FC = () => {
                       {`활동링크${idx + 1}`}
                     </a>
                   ))}
-                </p>
-              </p>
+                </div>
+              </div>
             </div>
 
             <dl className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8'></dl>

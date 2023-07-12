@@ -16,7 +16,7 @@ const DropMenu: FC<PropsWithChildren<DropMenuProps>> = ({ children, menuTitle, c
             <span className='text-slate-800 overflow-hidden text-ellipsis line-clamp-1'>{menuTitle}</span>
             {chevron && (
               <ChevronDownIcon
-                className='ml-0.5 -mr-1 h-5 w-5 text-slate-600 hover:text-slate-600'
+                className='ml-0.5 -mr-1 h-5 w-5 text-slate-600 hover:text-slate-900'
                 aria-hidden='true'
               />
             )}

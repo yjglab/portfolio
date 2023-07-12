@@ -1,9 +1,10 @@
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 import Badge from '../components/Badge';
 import { me } from '../tools/data';
 
 const Home = () => {
   return (
-    <div className='bg-white py-24 sm:py-32 mt-10'>
+    <div className='bg-white py-24 sm:py-32 mt-10 font-medium'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl text-center'>
           <h2 className='text-base font-semibold leading-7 text-slate-600'>{me.title}</h2>
@@ -12,7 +13,11 @@ const Home = () => {
             <img src={me.avatar} alt='avatar' className='object-cover scale-150 relative top-2' />
           </div>
 
-          <p className='lg:text-center text-left mt-6 text-lg leading-8 text-slate-600'>{me.description}</p>
+          {me.description.brief.map((text) => (
+            <p key={text} className='lg:text-center text-left mt-6 text-lg leading-8 text-slate-600'>
+              {text}
+            </p>
+          ))}
         </div>
 
         <div className='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl'>
@@ -26,22 +31,25 @@ const Home = () => {
                   {information.name}
                 </dt>
                 {information.name === '채널' ? (
-                  <div className='flex flex-col mt-2 text-base leading-7 text-slate-600 hover:text-slate-900'>
-                    <div className='flex items-center'>
+                  <div className='flex flex-col mt-2 text-base leading-7 text-slate-600'>
+                    <div className='flex items-center hover:text-slate-900'>
                       <Badge content='Email' />
                       <span>{information.links.email}</span>
+                      <ArrowTopRightOnSquareIcon className='w-4 ml-0.5' />
                     </div>
-                    <div className='flex items-center'>
+                    <div className='flex items-center hover:text-slate-900'>
                       <Badge content='GitHub' />
                       <a href={information.links.github} target='_blank' rel='noreferrer'>
                         {information.links.github}
                       </a>
+                      <ArrowTopRightOnSquareIcon className='w-4 ml-0.5' />
                     </div>
-                    <div className='flex items-center'>
+                    <div className='flex items-center hover:text-slate-900'>
                       <Badge content='Blog' />
                       <a href={information.links.blog} target='_blank' rel='noreferrer'>
                         {information.links.blog}
                       </a>
+                      <ArrowTopRightOnSquareIcon className='w-4 ml-0.5' />
                     </div>
                   </div>
                 ) : (
@@ -52,6 +60,12 @@ const Home = () => {
           </dl>
         </div>
       </div>
+      {/* <div className='mx-auto mt-32 max-w-2xl text-center'>
+        <p className='mt-2 text-2xl font-bold tracking-tight text-slate-700 sm:text-3xl'>Self Introduce</p>
+        <p className='lg:text-center text-left mt-6 text-lg leading-8 text-slate-600'>
+          {me.description.self}
+        </p>
+      </div> */}
     </div>
   );
 };

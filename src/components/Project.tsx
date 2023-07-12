@@ -4,6 +4,7 @@ import { projectsDev } from '../tools/data';
 import Badge from './Badge';
 import Carousel from './Carousel';
 import ImageLoader from './ImageLoader';
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
 const Project: FC = () => {
   const { name } = useParams();
@@ -14,7 +15,7 @@ const Project: FC = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen font-medium'>
       <header className='mx-auto max-w-2xl px-4 py-3 sm:px-6  lg:max-w-7xl lg:px-8'>
         <div className='flex flex-col text-sm md:text-base md:flex-row items-center justify-between border-b border-slate-200 pb-5 pt-24'>
           <div className='flex gap-1.5 items-center'>
@@ -46,28 +47,28 @@ const Project: FC = () => {
                 <span className='font-medium text-slate-700 mr-4'>Link</span>
                 <div className='flex gap-4 items-center text-sm'>
                   <a
-                    className='hover:text-slate-700 font-bold'
+                    className='hover:text-slate-900 font-bold flex'
                     target='_blank'
                     rel='noreferrer'
                     href={project.details.link.production}
                   >
-                    프로덕션 페이지
+                    프로덕션 페이지 <ArrowTopRightOnSquareIcon className='ml-0.5 w-4' />
                   </a>
                   <a
-                    className='hover:text-slate-700 font-bold'
+                    className='hover:text-slate-900 font-bold flex'
                     target='_blank'
                     rel='noreferrer'
                     href={project.details.link.wiki}
                   >
-                    기능 상세보기
+                    주요 기능 소개 <ArrowTopRightOnSquareIcon className='ml-0.5 w-4' />
                   </a>
                   <a
-                    className='hover:text-slate-700 font-bold'
+                    className='hover:text-slate-900 font-bold flex'
                     target='_blank'
                     rel='noreferrer'
                     href={project.details.link.github}
                   >
-                    GitHub
+                    GitHub <ArrowTopRightOnSquareIcon className='ml-0.5 w-4' />
                   </a>
                 </div>
               </div>

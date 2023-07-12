@@ -55,7 +55,7 @@ const Carousel: FC<Props> = ({ images, wikiUrl, subMessage, counter }) => {
               href={wikiUrl}
               target='_blank'
               rel='noreferrer'
-              className='underline font-bold hover:text-slate-800'
+              className='underline font-bold hover:text-slate-900'
             >
               프로젝트 위키
             </a>

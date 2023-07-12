@@ -3,10 +3,21 @@ import { avatar } from './global';
 
 export const me = {
   name: 'Jaekyeong Yuk',
-  title: '꼼꼼하고 정직한 웹 개발자',
+  title: '',
   avatar: avatar,
-  description:
-    'React와 Express, Sequelize를 이용하여 완전한 웹 서비스를 개발하고 배포할 수 있으며 상태관리는 필요에 따라 Redux, SWR을 사용합니다. 디자인과 Tailwind, SCSS를 사용한 반응형 퍼블리싱을 문제없이 수행합니다. 0.01%의 오차도 남기지 않도록 섬세하게 작업하는 개발 스타일을 가지고 있으며 개발에 필요한 각 포지션의 역할을 이해하여 다방면으로 원활한 커뮤니케이션 능력을 갖추고자 합니다.',
+  description: {
+    brief: [
+      '2개의 풀스택 웹 서비스와 2개의 인터랙션 웹서비스를 디자인/개발/배포해본 경험이 있습니다. React와 Express, Sequelize를 사용하고 있으며 상태관리는 상황에 따라 Redux, SWR을 사용합니다. \
+      Next를 이용해 SSR을 적용해본 경험이 있고 Tailwind CSS, SCSS를 사용한 반응형 퍼블리싱을 수행할 수 있습니다.',
+
+      '버그를 마주치는 것을 좋아하고 새롭게 알게 된 해결책이나 학습한 내용을 타인과 공유하는 것을 좋아합니다. 개발 커뮤니티에 소속되어 지속적으로 질문/답변에 참여하고 있고 학부 시절 학습했던 지식을 바탕으로 \
+      파이썬 모듈 강의를 제작하여 누적 2700여명의 수강생에게 높은 평점을 받은 적이 있습니다.',
+
+      '프로젝트의 로고 디자인과 레이아웃 디자인은 디자인 프로그램을 이용해 스스로 진행하고 있습니다. 웹 서비스의 전체적인 시스템과 데이터 소통방식을 이해하고 다른 구성원과의 원활한 협업을 위해 백엔드를 러닝 커브에 추가하였고 \
+      API와 데이터베이스 모델을 설계할 수 있습니다.',
+    ],
+    self: '',
+  },
   informations: [
     {
       name: '전공',
@@ -16,7 +27,8 @@ export const me = {
     },
     {
       name: '기술 스택',
-      description: 'TypeScript, React, Redux, Next, TailwindCSS, SCSS, Pug, Express, Sequelize, Python, AWS',
+      description:
+        'TypeScript, React, Redux, Next, TailwindCSS, SCSS, Pug, Express, Sequelize, Python, Socket.io, AWS',
       links: {},
       icon: CodeBracketIcon,
     },
@@ -41,49 +53,20 @@ export const me = {
 
 export const activities = [
   {
-    status: '진행중인 활동',
-    name: '개인 기술블로그',
-    href: 'blog',
-    imageAlt: '',
-    date: '2020. 07~',
-    subtitle: '공부한 내용을 기록해두는 개인 블로그.',
-    thumb: 'https://github.com/yjglab/portfolio/assets/70316567/8c24b186-8b5b-4efe-bf9b-df12ca5129ab',
-
-    details: {
-      banner: '',
-      link: ['https://yjg-lab.tistory.com'],
-      description:
-        '개발 공부를 시작한 후부터 지금까지 지속적으로 공부했던 내용을 기록해두는 개인 블로그입니다. 주로 CS지식, Python과 JavaScript로 풀이한 알고리즘 문제 풀이 등을 기록하고 있으며 언제 어디서든 기록한 내용들을 복습하기 위해 관리하고 있습니다.',
-      images: [
-        {
-          name: '1',
-          src: 'https://github.com/yjglab/portfolio/assets/70316567/3e907448-516c-433a-bbd1-7e3ccd647bd0',
-        },
-        {
-          name: '2',
-          src: 'https://github.com/yjglab/portfolio/assets/70316567/4d3176a5-ddef-461a-9031-4ede9a726a17',
-        },
-        {
-          name: '3',
-          src: 'https://github.com/yjglab/portfolio/assets/70316567/0f8ad0de-6c1c-40c6-aba7-5812cf6c9e61',
-        },
-      ],
-    },
-  },
-  {
-    status: '완료된 활동',
     name: 'ICT 이노베이션 스퀘어 코딩경진대회',
     href: 'coding-competition',
-    imageAlt: '',
-    date: '2023. 06',
+    imageAlt: 'ICT 이노베이션 스퀘어 코딩경진대회',
+    date: 2023,
+    month: '2023.06',
+    tags: ['알고리즘', '코딩경진대회'],
     subtitle: '전주문화산업진흥원 주관으로 진행된 코딩경진대회에서 대상 수상.',
     thumb: 'https://github.com/yjglab/portfolio/assets/70316567/eaff2b5e-8606-43b9-ae12-2f423126ca4e',
-
     details: {
       banner: 'https://github.com/yjglab/portfolio/assets/70316567/eaff2b5e-8606-43b9-ae12-2f423126ca4e',
       link: [],
       description:
         '전주 ICT 교육사업부에서 진행한 코딩경진대회입니다. 총 2시간의 제한 시간 내로 원하는 언어를 골라 주어진 3개의 알고리즘 문제를 풀어내는 것이 대회 목표입니다. 가지고 있던 코딩 능력을 발휘해볼 소중한 기회였으며 대상이라는 값진 성과를 만들었습니다.',
+
       images: [
         {
           name: '1',
@@ -93,15 +76,15 @@ export const activities = [
     },
   },
   {
-    status: '완료된 활동',
     name: 'Python NumPy 모듈 강의 제작',
     href: 'python-numpy',
-    imageAlt: '',
-    date: '2021. 09',
+    imageAlt: 'Python NumPy 모듈 강의 제작',
+    date: 2021,
+    month: '2021.08',
+    tags: ['Python', 'NumPy', '행렬연산'],
     subtitle: '데이터 분석과 처리에 흥미를 느껴, 자가 복습용으로 만든 강의 영상',
     thumb:
       'https://asset.programmers.co.kr/production/course_intro/16290/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%82%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF.jpeg',
-
     details: {
       banner: 'https://asset.programmers.co.kr/production/course_intro/16290/banner-01-01.jpg',
       link: [
@@ -126,18 +109,47 @@ export const activities = [
       ],
     },
   },
+  {
+    name: '개인 기술블로그',
+    href: 'blog',
+    imageAlt: '',
+    date: 2020,
+    month: '2020.07~',
+    tags: ['기술 블로그', 'CS공부'],
+    subtitle: '공부한 내용을 기록해두는 개인 블로그.',
+    thumb: 'https://github.com/yjglab/portfolio/assets/70316567/8c24b186-8b5b-4efe-bf9b-df12ca5129ab',
+    details: {
+      banner: '',
+      link: ['https://yjg-lab.tistory.com'],
+      description:
+        '개발 공부를 시작한 후부터 지금까지 지속적으로 공부했던 내용을 기록해두는 개인 블로그입니다. 주로 CS지식, Python과 JavaScript로 풀이한 알고리즘 문제 풀이 등을 기록하고 있으며 언제 어디서든 기록한 내용들을 복습하기 위해 관리하고 있습니다.',
+      images: [
+        {
+          name: '1',
+          src: 'https://github.com/yjglab/portfolio/assets/70316567/3e907448-516c-433a-bbd1-7e3ccd647bd0',
+        },
+        {
+          name: '2',
+          src: 'https://github.com/yjglab/portfolio/assets/70316567/4d3176a5-ddef-461a-9031-4ede9a726a17',
+        },
+        {
+          name: '3',
+          src: 'https://github.com/yjglab/portfolio/assets/70316567/0f8ad0de-6c1c-40c6-aba7-5812cf6c9e61',
+        },
+      ],
+    },
+  },
 ];
 export const projectsDev = [
   {
     name: 'BlooBolt',
     href: 'bloobolt',
-    imageSrc: '',
-    imageAlt: '소프트웨어 개발자와 기획자, 디자이너들의 소통 스퀘어',
+    imageAlt: '서비스 개발자와 기획자, 디자이너들의 소통 스퀘어',
     date: 2023,
-    skills: ['TypeScript', 'React', 'Next', 'Redux-Toolkit', 'TailwindCSS', 'Express', 'Sequelize', 'AWS'],
-    subtitle: '소프트웨어 개발자와 기획자, 디자이너들의 소통 스퀘어',
+    month: '3월',
+    tags: ['TypeScript', 'React', 'Next', 'Redux-Toolkit', 'TailwindCSS', 'Express', 'Sequelize', 'AWS'],
+    subtitle: '서비스 개발자와 기획자, 디자이너들의 소통 스퀘어',
     thumb: `${process.env.PUBLIC_URL}/images/bloobolt_thumb.png`,
-
     details: {
       version: '0.2.0',
       banner:
@@ -197,8 +209,8 @@ export const projectsDev = [
           ],
         },
         {
-          name: '공통',
-          content: ['반응형 웹 스크린'],
+          name: '전체',
+          content: ['서버사이드 렌더링', '반응형 웹 스크린'],
         },
       ],
       images: [
@@ -224,10 +236,10 @@ export const projectsDev = [
   {
     name: 'BlooWays',
     href: 'blooways',
-    imageSrc: '',
     imageAlt: '실시간 온라인 라이브 토크 메시지',
     date: 2023,
-    skills: [
+    month: '5월',
+    tags: [
       'TypeScript',
       'React',
       'SWR',
@@ -276,7 +288,7 @@ export const projectsDev = [
           content: ['일반/소셜 회원 가입', '로그인', '사용자명 변경'],
         },
         {
-          name: '블루웨이 및 에리어(소켓 네임스페이스)',
+          name: '블루웨이 및 에리어(NSP)',
           content: [
             '블루웨이 생성',
             '에리어 생성',
@@ -291,7 +303,7 @@ export const projectsDev = [
           ],
         },
         {
-          name: '공통',
+          name: '전체',
           content: ['반응형 웹 스크린'],
         },
       ],
@@ -318,10 +330,10 @@ export const projectsDev = [
   {
     name: 'Museum Union Gallery',
     href: 'mug',
-    imageSrc: '',
     imageAlt: '전시 정보를 한 페이지에서 쉽게 확인할 수 있는 인터랙티브 웹 서비스',
     date: 2022,
-    skills: ['JavaScript', 'JQuery', 'Express', 'Pug', 'SCSS', 'MongoDB'],
+    month: '7월',
+    tags: ['JavaScript', 'JQuery', 'Express', 'Pug', 'SCSS', 'MongoDB'],
     subtitle: '전시 정보를 한 페이지에서 쉽게 확인할 수 있는 인터랙티브 웹 서비스',
     thumb: `${process.env.PUBLIC_URL}/images/mug_thumb.png`,
 
@@ -352,7 +364,7 @@ export const projectsDev = [
         '미리 크롤링해놓은 전시 정보 데이터를 한 페이지에서 쉽게 확인할 수 있는 인터랙티브 반응형 웹 서비스입니다. 파이썬 Selenium을 이용해 Robot 배제 프로토콜 허용 범위안에서 전시 데이터를 모았으며 이 데이터를 카드 형식으로 디자인하여 페이지에 로드합니다. 사용자 인터랙션과 애니메이션 구현, 퍼블리싱에 집중한 프로젝트입니다. 컨트롤러에서 사용자가 페이지를 요청하면 셔플된 MongoDB 데이터를 불러와서 객체로 전송해줍니다. Pug에서 전달받은 데이터를 페이지에 렌더링합니다.',
       implements: [
         {
-          name: '공통',
+          name: '전체',
           content: [
             '스크롤 애니메이션',
             '카드 소팅 애니메이션',
@@ -386,10 +398,10 @@ export const projectsDev = [
   {
     name: 'Tira',
     href: 'tira',
-    imageSrc: '',
     imageAlt: '티라미수 케이크 쇼핑몰 사이트',
     date: 2021,
-    skills: ['JavaScript', 'JQuery', 'Express', 'Pug', 'SCSS', 'MongoDB'],
+    month: '9월',
+    tags: ['JavaScript', 'JQuery', 'Express', 'Pug', 'SCSS', 'MongoDB'],
     subtitle: '티라미수 케이크 쇼핑몰 사이트',
     thumb: `${process.env.PUBLIC_URL}/images/tira_thumb.png`,
 
@@ -420,7 +432,7 @@ export const projectsDev = [
         'TIRA는 그리스 산토리니에 존재하는 여섯 마을을 배경으로 한 티라미수 전문 디저트 브랜드입니다. 산토리니 마을들의 특징과 색상, 형태 등을 반영하여 패키지의 디자인과 제품의 맛이 각 마을과 가장 잘 부합하도록 선정된 다양한 티라미수 패키지를 제공합니다.',
       implements: [
         {
-          name: '공통',
+          name: '전체',
           content: ['브랜드 소개 페이지 및 서비스 가입', '스크롤 애니메이션', '장바구니 및 가격 조정 기능'],
         },
       ],
@@ -450,7 +462,6 @@ export const projectsDesign = [
   {
     name: '',
     href: '',
-    imageSrc: '',
     imageAlt: '',
     date: 202,
     skills: [''],
