@@ -14,7 +14,10 @@ const Home = () => {
           </div>
 
           {me.description.brief.map((text) => (
-            <p key={text} className='lg:text-center text-left mt-6 text-lg leading-8 text-slate-600'>
+            <p
+              key={text}
+              className='lg:text-center text-left mt-6 text-[17px] leading-[1.85rem] text-slate-600'
+            >
               {text}
             </p>
           ))}
@@ -58,6 +61,23 @@ const Home = () => {
               </div>
             ))}
           </dl>
+        </div>
+
+        <div className='mx-auto mt-36 max-w-2xl text-center'>
+          <p className='mt-2 text-3xl font-bold tracking-tight text-slate-700 sm:text-3xl'>
+            어떤 개발자인가요?
+          </p>
+        </div>
+
+        <div className='mx-auto mt-12 max-w-2xl lg:mt-14 lg:max-w-4xl'>
+          <div className='text-[17px] grid grid-cols-1 gap-x-16 gap-y-10 tracking-tight sm:grid-cols-2 lg:pt-2'>
+            {me.description.self.map((s) => (
+              <div key={s.title} className=' flex flex-col items-start'>
+                <div className='mt-4 font-bold text-slate-800'>{s.title}</div>
+                <div className='mt-2 font-normal leading-[1.85rem] text-gray-700'>{s.content}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       {/* <div className='mx-auto mt-32 max-w-2xl text-center'>
