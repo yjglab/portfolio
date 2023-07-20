@@ -1,6 +1,11 @@
+import { useEffect } from 'react';
 import { avatar, bloosLogoFull } from '../tools/global';
 
 const Brand = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className=' font-medium min-h-screen items-center flex justify-center relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:px-8'>
       <div className='mx-auto max-w-2xl lg:max-w-5xl'>

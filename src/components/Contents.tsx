@@ -1,10 +1,8 @@
 import React, { FC, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import Badge from './Badge';
 import DropMenu from './DropMenu';
 import { Menu } from '@headlessui/react';
 import { activities, projectsDev } from '../tools/data';
-import ThumbLoader from './ThumbLoader';
 import { Content } from '../types/Content';
 import ContentBlock from './ContentBlock';
 
@@ -24,6 +22,10 @@ const Contents: FC<Props> = ({ page }) => {
       setPageData(activities);
     }
   }, [page]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className='min-h-screen font-medium'>
       <header className='mx-auto max-w-2xl px-4 py-3 sm:px-6  lg:max-w-7xl lg:px-8'>

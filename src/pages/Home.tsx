@@ -1,12 +1,29 @@
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 import Badge from '../components/Badge';
 import { me } from '../tools/data';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 
 const Home = () => {
+  const [about1Ref, about1InView] = useInView();
+  const [about2Ref, about2InView] = useInView();
+  const [about3Ref, about3InView] = useInView();
+  const [about4Ref, about4InView] = useInView();
+  const [about5Ref, about5InView] = useInView();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className='bg-white py-24 sm:py-32 mt-10 font-medium'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-        <div className='mx-auto max-w-2xl text-center'>
+        <div
+          ref={about1Ref}
+          className={`${
+            about1InView && 'opacity-100'
+          } opacity-0 duration-300 delay-[300ms] mx-auto max-w-2xl text-center`}
+        >
           <h2 className='text-base font-semibold leading-7 text-slate-600'>{me.title}</h2>
           <p className='mt-2 text-3xl font-bold tracking-tight text-slate-700 sm:text-4xl'>{me.name}</p>
           <div className='w-36 rounded-full overflow-hidden mx-auto my-10 shadow-slate-200 shadow-lg'>
@@ -23,7 +40,12 @@ const Home = () => {
           ))}
         </div>
 
-        <div className='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl'>
+        <div
+          ref={about2Ref}
+          className={`${
+            about2InView && 'opacity-100'
+          } opacity-0 duration-300 delay-[300ms] mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl`}
+        >
           <dl className='grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16'>
             {me.informations.map((information) => (
               <div key={information.name} className='relative pl-16'>
@@ -33,7 +55,7 @@ const Home = () => {
                   </div>
                   {information.name}
                 </dt>
-                {information.name === '채널' ? (
+                {information.name === 'Channels' ? (
                   <div className='flex flex-col mt-2 text-base leading-7 text-slate-600'>
                     <div className='flex items-center hover:text-slate-900'>
                       <Badge content='Email' />
@@ -56,22 +78,36 @@ const Home = () => {
                     </div>
                   </div>
                 ) : (
-                  <dd className='mt-2 text-base leading-7 text-slate-600'>{information.description}</dd>
+                  <dd className='mt-2 text-base leading-7 text-slate-600'>
+                    {Array.isArray(information.description)
+                      ? information.description.map((text) => <div key={text}>• {text}</div>)
+                      : information.description}
+                  </dd>
                 )}
               </div>
             ))}
           </dl>
         </div>
 
-        <div className='mx-auto mt-36 max-w-2xl text-center'>
+        <div
+          ref={about3Ref}
+          className={`${
+            about3InView && 'opacity-100'
+          } opacity-0 duration-300 delay-[300ms] mx-auto mt-36 max-w-2xl text-center`}
+        >
           <p className='mt-2 text-3xl font-bold tracking-tight text-slate-700 sm:text-3xl'>
             어떤 개발자인가요?
           </p>
         </div>
 
-        <div className='mx-auto mt-12 max-w-2xl lg:mt-14 lg:max-w-4xl'>
+        <div
+          ref={about4Ref}
+          className={`${
+            about4InView && 'opacity-100'
+          } opacity-0 duration-300 delay-[500ms] mx-auto mt-12 max-w-2xl lg:mt-14 lg:max-w-4xl`}
+        >
           <div className='text-[17px] grid grid-cols-1 gap-x-16 gap-y-10 tracking-tight sm:grid-cols-2 lg:pt-2'>
-            {me.description.self.map((s) => (
+            {me.description.self.slice(0, 2).map((s) => (
               <div key={s.title} className=' flex flex-col items-start'>
                 <div className='mt-4 font-bold text-slate-800'>{s.title}</div>
                 <div className='mt-2 font-normal leading-[1.85rem] text-gray-700'>{s.content}</div>
@@ -79,7 +115,26 @@ const Home = () => {
             ))}
           </div>
         </div>
+
+        <div
+          ref={about5Ref}
+          className={`${
+            about5InView && 'opacity-100'
+          } opacity-0 duration-300 delay-[500ms] mx-auto mt-12 max-w-2xl lg:mt-14 lg:max-w-4xl`}
+        >
+          <div className='text-[17px] grid grid-cols-1 gap-x-16 gap-y-10 tracking-tight sm:grid-cols-2 lg:pt-2'>
+            {me.description.self.slice(2, 4).map((s) => (
+              <div key={s.title} className=' flex flex-col items-start'>
+                <div className='mt-4 font-bold text-slate-800'>{s.title}</div>
+                <div className='mt-2 whitespace-pre-line font-normal leading-[1.85rem] text-gray-700'>
+                  {s.content}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+
       {/* <div className='mx-auto mt-32 max-w-2xl text-center'>
         <p className='mt-2 text-2xl font-bold tracking-tight text-slate-700 sm:text-3xl'>Self Introduce</p>
         <p className='lg:text-center text-left mt-6 text-lg leading-8 text-slate-600'>

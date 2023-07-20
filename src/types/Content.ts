@@ -11,6 +11,10 @@ export interface Content {
     version?: string;
     banner: string;
     link: any;
+    issues?: {
+      name: string;
+      description: string[];
+    };
     skills?: Array<{
       name: string;
       content: string;

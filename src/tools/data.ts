@@ -1,4 +1,11 @@
-import { AcademicCapIcon, BeakerIcon, CodeBracketIcon, SignalIcon } from '@heroicons/react/24/outline';
+import {
+  AcademicCapIcon,
+  CodeBracketIcon,
+  RectangleGroupIcon,
+  ServerIcon,
+  SignalIcon,
+  TrophyIcon,
+} from '@heroicons/react/24/outline';
 import { avatar } from './global';
 
 export const me = {
@@ -18,33 +25,63 @@ export const me = {
     ],
     self: [
       {
-        title: '반응형 프론트엔드 개발자입니다.',
+        title: '반응형 프론트엔드 개발자입니다',
         content:
-          '대학에서 겪었던 어려움을 해결하기 위해 웹 서비스로 만들어 실현한 경험이 있습니다. 팀 프로젝트를 진행하면서 디자이너와 개발자 간의 소통에 어려움을 느꼈고, 이들이 서로의 상황을 이해하고 지식을 공유할 수 있는 인터넷 공간이 필요하다는 생각을 했습니다. 3학년 디자인 전공 과정 중 가장 바쁜 시기였지만, 개발과 관련된 기술과 지식의 필요성을 느껴 컴퓨터 공학을 복수 전공했습니다. 목표로 정한 웹 커뮤니티 서비스를 개발하고 배포하기까지 필요한 과정을 과감히 수용했습니다. 이처럼 저는 목표가 있다면 그것을 이루기까지의 변화와 난관을 두려워하지 않습니다. 지금은 디자인과 밀접한 프론트엔드 파트를 중심으로 개발하고 있으며, 원하는 목표를 실현하기 위해 필요한 기술과 지식을 받아들이고 빠르게 변화할 수 있는 반응형 개발자입니다.',
+          '대학에서 겪었던 어려움을 해결하기 위해 웹 서비스로 만들어 실현한 경험이 있습니다. 팀 프로젝트를 진행하면서 디자이너와 개발자 간의 소통에 어려움을 느꼈고, 이들이 서로의 상황을 이해하고 지식을 공유할 수 있는 인터넷 공간이 필요하다고 생각했습니다. 3학년 디자인 전공 과정 중 가장 바쁜 시기였지만, 개발과 관련된 기술과 지식의 필요성을 느껴 컴퓨터 공학을 복수 전공했고 목표로 정한 웹 커뮤니티 서비스를 개발하고 배포하기까지 필요한 과정을 과감히 수용했습니다. 이처럼 저는 목표가 있다면 그것을 이루기까지의 변화와 난관을 두려워하지 않습니다. 지금은 디자인과 밀접한 프론트엔드 파트를 중심으로 개발하고 있으며, 저는 원하는 목표를 실현하기 위해 필요한 기술과 지식을 받아들이고 빠르게 변화할 수 있는 반응형 개발자입니다.',
       },
       {
-        title: '버그를 마주치면 해결책을 기록하고 공유하는 것을 좋아합니다.',
+        title: '버그를 마주치면 해결책을 기록하고 공유하는 것을 좋아합니다',
         content:
-          '개발 과정에서 발생하는 버그와 에러 코드에 최대한 많이 부딪쳐보는 것을 선호합니다. 사용자에게 오류 없는 서비스를 제공하기 위해서는 예상치 못한 버그를 최소화하는 것이 필요하다고 생각하기 때문에 다양한 어려움을 경험하고 해결해보는 것이 중요하다고 생각합니다. 제가 진행한 모든 프로젝트에서는 발생한 오류와 새로운 기능 도입 시 마주친 어려움과 해결 과정을 프로젝트의 GitHub 위키, 블로그, 그리고 개발 커뮤니티에 코드와 함께 기록하고 공유하고 있습니다. 이처럼 저는 이런 과정을 통해 다음 프로젝트 진행에 도움을 주고, 비슷한 목표를 가진 동료 개발자들과 함께 안전한 서비스를 만들어내는 데에 기여할 수 있는 개발자로 성장할 수 있는 강점을 가진 개발자입니다.',
+          '개발 과정에서 발생하는 버그와 에러 코드에 최대한 많이 부딪쳐보는 것을 선호합니다. 사용자에게 오류 없는 서비스를 제공하기 위해서는 예상치 못한 버그를 최소화하는 것이 중요하다고 생각하기 때문에 다양한 어려움을 경험하고 해결해보는 것이 필요하다고 생각합니다. 저는 진행했던 모든 프로젝트에서 발생한 오류와 새로운 기능 도입 시 마주친 어려움 및 해결 과정을 프로젝트의 GitHub 위키, 블로그, 그리고 개발 커뮤니티에 코드와 함께 기록하고 공유하고 있습니다. 저는 이런 과정을 통해 다음 프로젝트 진행에 도움을 주고, 비슷한 목표를 가진 동료 개발자들과 함께 안전한 서비스를 만들어내는 데에 기여할 수 있는 개발자로 성장할 수 있는 강점을 가진 개발자입니다.',
+      },
+      {
+        title: '상대에게 저의 생각과 지식을 쉽게 이해할 수 있도록 전달합니다',
+        content:
+          '학습한 지식을 인터넷 강의로 만들어 2800여 명의 수강생으로부터 4.9/5.0의 높은 평점을 받은 경험이 있습니다. 저는 새롭게 배운 지식을 누군가에게 직접 설명해보는 것이 빠르게 지식을 체화하고 동료에게 평소 의견을 잘 전달할 수 있는 가장 좋은 방법이라고 생각합니다. 대학에서 배운 선형대수학과 관련 모듈의 사용법을 코드와 함께 직접 녹화하여 인터넷에 업로드했고, 강의 서비스 업체인 인프런과 프로그래머스에서 업로드 제의를 받아 많은 사람들에게 공유했습니다. 이처럼 저는 확실히 이해하고 있는 지식이 있고 공유할 필요성이 있다면 그것을 많은 사람들에게 온전히 전달할 수 있는 개발자입니다.',
+      },
+      {
+        title: '디자이너 포지션과 원활한 협업이 가능합니다',
+        content:
+          '4인으로 구성된 디자인 웹 포스터 프로젝트를 두 차례 팀장으로 이끌었고, 퍼블리싱 역할을 담당했습니다. 기획 단계와 작업 단계에서는 매주 대면 회의를 진행하여 팀원들의 의견을 협업 도구에 기록하고 취합했습니다. 팀 내에 코딩을 어려워하는 팀원이 있어 갈등 상황이 발생한 적이 있습니다. 개인적으로 해당 팀원을 코칭해주었고 초기 작업했던 코드를 비교해보며 팀원의 코딩 실력을 발전시키고 팀 전체의 성능을 향상했습니다. 결과적으로 두 개의 프로젝트를 성공적으로 마무리하고, 저희 팀은 해당 과목에서 1등을 차지했습니다. 저에 대한 팀원들의 피드백으로, "교수님보다 더 잘 가르쳐주는 사람"이자 "코딩 능력이 부족한 팀원을 실력자로 성장시키는 사람"이라는 평을 받았습니다. 이처럼 저는 디자이너들과의 협업 경험을 통해 디자인 포지션의 생각을 이해하고 공유하며 개발했던 경험이 있기에, 디자이너들과도 높은 시너지를 발휘할 수 있는 개발자입니다.',
       },
     ],
   },
   informations: [
     {
-      name: '전공',
+      name: 'Front-end Engineering',
+      description: [
+        '2개의 개인 프로젝트(Frontend + Backend), 2개의 인터랙션 웹사이트 개발 경험.',
+        'TypeScript, React 이용한 SPA웹 개발, Next.js 이용한 SSR 적용, Redux 전역 상태관리 사용 경험.',
+        'TailwindCSS, SCSS를 이용한 반응형 웹 페이지 개발 가능.',
+      ],
+      links: {},
+      icon: RectangleGroupIcon,
+    },
+    {
+      name: 'Back-end Engineering',
+      description: [
+        'Express, Sequelize + MySQL2를 기반으로 Backend API서버와 데이터베이스 구축 가능.',
+        'AWS(EC2, S3, Route53, Lambda), Nginx를 이용한 서비스 배포 경험.',
+        'Socket.io를 이용한 실시간 데이터 전송 기능 개발 경험.',
+      ],
+      links: {},
+      icon: ServerIcon,
+    },
+    {
+      name: 'Major',
       description: '컴퓨터공학 / 시각디자인학 복수전공 학사',
       links: {},
       icon: AcademicCapIcon,
     },
     {
-      name: '기술 스택',
+      name: 'Skills',
       description:
         'TypeScript, React, Redux, Next, TailwindCSS, SCSS, Pug, Express, Sequelize, Python, Socket.io, AWS',
       links: {},
       icon: CodeBracketIcon,
     },
     {
-      name: '채널',
+      name: 'Channels',
       description: '',
       links: {
         email: 'yjgdesign@gmail.com',
@@ -54,10 +91,10 @@ export const me = {
       icon: SignalIcon,
     },
     {
-      name: '타입',
-      description: '성실성, 우직함, 끈기, 지속성, 깔끔함',
+      name: 'Award & Certification',
+      description: ['지역 ICT이노베이션 스퀘어 코딩경진대회 대상', '정보처리기사'],
       links: {},
-      icon: BeakerIcon,
+      icon: TrophyIcon,
     },
   ],
 };
@@ -170,6 +207,13 @@ export const projectsDev = [
         github: 'https://github.com/yjglab/BlooBolt',
         wiki: 'https://github.com/yjglab/BlooBolt/wiki',
       },
+      issues: {
+        name: '스크롤 시 데이터가 몇차례 추가 로드되지 않는 현상',
+        description: [
+          '기존 scroll 메서드를 사용함에 따라 분기 처리가 많은 이벤트 핸들러에서 간혹 데이터 로드 요청이 누락되는 상황.',
+          'Intersection Observer를 적용해 코드 리팩토링, 여러번의 이벤트 요청 방식 제거 및 성능 개선.',
+        ],
+      },
       skills: [
         {
           name: 'Frontend',
@@ -273,6 +317,14 @@ export const projectsDev = [
         github: 'https://github.com/yjglab/BlooWays',
         wiki: 'https://github.com/yjglab/BlooWays/wiki',
       },
+      issues: {
+        name: '수신하지 않은 메시지에 대한 알림 처리',
+        description: [
+          'A에리어에 있는 사용자가 B에리어에서 전송된 메시지에 대한 수신 알림을 받지 못하는 상황.',
+          '사용자가 각 에리어별로 입장한 시간, 마지막으로 메시지를 전송한 시간을 저장 후 API 요청.',
+          '전송된 시간 보다 데이터 생성일이 더 큰 메시지의 개수를 체크, 클라이언트로 전송하여 해결.',
+        ],
+      },
       skills: [
         {
           name: 'Frontend',
@@ -356,6 +408,13 @@ export const projectsDev = [
         production: 'https://mug-lab.fly.dev',
         github: 'https://github.com/yjglab/MuG',
         wiki: 'https://github.com/yjglab/MuG/wiki',
+      },
+      issues: {
+        name: '카드 클릭/닫기 클릭 시 위치 조정',
+        description: [
+          '카드 클릭 시 카드별 위치에서 천천히 확대되며 중앙 배치, 닫기 클릭 시 원위치로 조정해야 하는 상황.',
+          '사용자 브라우저의 Viewport 크기를 계산, 클릭한 카드의 좌푯값(X, Y)을 감산하여 해결.',
+        ],
       },
       skills: [
         {

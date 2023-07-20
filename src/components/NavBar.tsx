@@ -45,10 +45,10 @@ const NavBar: FC = () => {
         <Dialog as='div' className='relative md:hidden' onClose={setOpen}>
           <Transition.Child
             as={Fragment}
-            enter='transition-opacity ease-linear duration-300'
+            enter='transition-opacity ease-linear duration-200'
             enterFrom='opacity-0'
             enterTo='opacity-100'
-            leave='transition-opacity ease-linear duration-300'
+            leave='transition-opacity ease-linear duration-200'
             leaveFrom='opacity-100'
             leaveTo='opacity-0'
           >
@@ -58,10 +58,10 @@ const NavBar: FC = () => {
           <div className='fixed inset-0 z-50 flex justify-end'>
             <Transition.Child
               as={Fragment}
-              enter='transition ease-in-out duration-300 transform'
+              enter='transition ease-in-out duration-200 transform'
               enterFrom='translate-x-full'
               enterTo='translate-x-0'
-              leave='transition ease-in-out duration-300 transform'
+              leave='transition ease-in-out duration-200 transform'
               leaveFrom='translate-x-0'
               leaveTo='translate-x-full'
             >

@@ -4,7 +4,7 @@ import { projectsDev } from '../tools/data';
 import Badge from './Badge';
 import Carousel from './Carousel';
 import ImageLoader from './ImageLoader';
-import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
+import { ArrowTopRightOnSquareIcon, ExclamationTriangleIcon, LinkIcon } from '@heroicons/react/24/outline';
 
 const Project: FC = () => {
   const { name } = useParams();
@@ -43,11 +43,17 @@ const Project: FC = () => {
                 className='w-full top-0 ring-1 ring-slate-200 mb-5 rounded-md'
               />
               {project.details.description}
+
               <div className='mt-12 flex items-center text-slate-600'>
-                <span className='font-medium text-slate-700 mr-4'>Link</span>
-                <div className='flex gap-4 items-center text-sm'>
+                <div className='flex items-center gap-1 font-medium text-slate-700 mr-4'>
+                  <div className='w-[70px] pl-1.5 flex bg-slate-700 text-white rounded-md py-0.5 px-1.5'>
+                    <LinkIcon className='w-3.5 mr-1 stroke-2' />
+                    Link
+                  </div>
+                </div>
+                <div className='flex gap-4 items-center'>
                   <a
-                    className='hover:text-slate-900 font-bold flex'
+                    className='hover:text-slate-900 flex'
                     target='_blank'
                     rel='noreferrer'
                     href={project.details.link.production}
@@ -55,7 +61,7 @@ const Project: FC = () => {
                     프로덕션 페이지 <ArrowTopRightOnSquareIcon className='ml-0.5 w-4' />
                   </a>
                   <a
-                    className='hover:text-slate-900 font-bold flex'
+                    className='hover:text-slate-900 flex'
                     target='_blank'
                     rel='noreferrer'
                     href={project.details.link.wiki}
@@ -63,7 +69,7 @@ const Project: FC = () => {
                     주요 기능 소개 <ArrowTopRightOnSquareIcon className='ml-0.5 w-4' />
                   </a>
                   <a
-                    className='hover:text-slate-900 font-bold flex'
+                    className='hover:text-slate-900 flex'
                     target='_blank'
                     rel='noreferrer'
                     href={project.details.link.github}
@@ -72,11 +78,26 @@ const Project: FC = () => {
                   </a>
                 </div>
               </div>
+
+              <div className='mt-4 flex items-center text-slate-600'>
+                <div className='mb-1 flex items-center gap-1 font-medium text-slate-700 mr-4'>
+                  <div className='w-[70px] pl-1.5 mr-3 flex bg-slate-700 text-white rounded-md py-0.5 px-1.5'>
+                    <ExclamationTriangleIcon className='w-4 mr-1 stroke-2' />
+                    Issue
+                  </div>
+                  <span className='font-semibold'>{project.details.issues?.name}</span>
+                </div>
+              </div>
+              {project.details.issues?.description.map((text) => (
+                <div key={text} className='pl-1'>
+                  • {text}
+                </div>
+              ))}
             </div>
 
             <dl className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8'>
               <div className='border-t border-slate-200 pt-4'>
-                <dt className='font-medium text-slate-700 mb-3'>기술 태그</dt>
+                <dt className=' text-slate-700 mb-3 font-semibold'>기술 태그</dt>
                 {project.details.skills.map((skill) => (
                   <div key={skill.name} className='my-3 relative text-slate-600 text-sm'>
                     <dt className='inline bg-slate-200 px-2 py-0.5 rounded-md mr-1 text-slate-700'>
@@ -87,7 +108,7 @@ const Project: FC = () => {
                 ))}
               </div>
               <div className='border-t border-slate-200 pt-4'>
-                <dt className='font-medium text-slate-700 mb-3'>구현된 기능</dt>
+                <dt className=' text-slate-700 mb-3 font-semibold'>구현된 기능</dt>
                 {project.details.implements.map((implement) => (
                   <div key={implement.name} className='my-3 relative text-slate-600 text-sm'>
                     <dt className='inline bg-slate-200 px-2 py-0.5 rounded-md mr-1 text-slate-700'>
