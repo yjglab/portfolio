@@ -10,19 +10,10 @@ import { avatar } from './global';
 
 export const me = {
   name: 'Jaekyeong Yuk',
-  title: '반응형 프론트엔드 개발자 육재경입니다',
+  title: '어디서든 변화하는 반응형 프론트엔드 개발자 육재경입니다',
   avatar: avatar,
   description: {
-    brief: [
-      '2개의 풀스택 웹 서비스와 2개의 인터랙션 웹서비스를 디자인/개발/배포해본 경험이 있습니다. React와 Express, Sequelize를 사용하고 있으며 상태관리는 상황에 따라 Redux, SWR을 사용합니다. \
-      Next를 이용해 SSR을 적용해본 경험이 있고 Tailwind CSS, SCSS를 사용한 반응형 퍼블리싱을 수행할 수 있습니다.',
-
-      '버그를 마주치는 것을 좋아하고 새롭게 알게 된 해결책이나 학습한 내용을 타인과 공유하는 것을 좋아합니다. 개발 커뮤니티에 소속되어 지속적으로 질문/답변에 참여하고 있고 학부 시절 학습했던 지식을 바탕으로 \
-      파이썬 모듈 강의를 제작하여 누적 2700여명의 수강생에게 높은 평점을 받은 적이 있습니다.',
-
-      '프로젝트의 로고 디자인과 레이아웃 디자인은 디자인 프로그램을 이용해 스스로 진행하고 있습니다. 웹 서비스의 전체적인 시스템과 데이터 소통방식을 이해하고 다른 구성원과의 원활한 협업을 위해 백엔드를 러닝 커브에 추가하였고 \
-      API와 데이터베이스 모델을 설계할 수 있습니다.',
-    ],
+    brief: [''],
     self: [
       {
         title: '반응형 프론트엔드 개발자입니다',
@@ -50,50 +41,51 @@ export const me = {
     {
       name: 'Front-end Engineering',
       description: [
-        '2개의 개인 프로젝트(Frontend + Backend), 2개의 인터랙션 웹사이트 개발 경험.',
-        'TypeScript, React 이용한 SPA웹 개발, Next.js 이용한 SSR 적용, Redux 전역 상태관리 사용 경험.',
-        'TailwindCSS, SCSS를 이용한 반응형 웹 페이지 개발 가능.',
+        '풀스택 프로젝트(Frontend + Backend), 인터랙션 웹사이트 개발',
+        'TypeScript, React 이용한 SPA웹 개발, Next.js 이용한 SSR 적용, Redux 전역 상태관리 사용',
+        'TailwindCSS, SCSS를 이용한 반응형 웹 페이지 개발',
       ],
-      links: {},
+      links: [],
       icon: RectangleGroupIcon,
     },
     {
       name: 'Back-end Engineering',
       description: [
-        'Express, Sequelize + MySQL2를 기반으로 Backend API서버와 데이터베이스 구축 가능.',
-        'AWS(EC2, S3, Route53, Lambda), Nginx를 이용한 서비스 배포 경험.',
-        'Socket.io를 이용한 실시간 데이터 전송 기능 개발 경험.',
+        'Express, Sequelize + MySQL2를 기반으로 Backend API서버와 데이터베이스 구축',
+        'AWS(EC2, S3, Route53, Lambda), Nginx를 이용한 서비스 배포',
+        'Socket.io를 이용한 실시간 데이터 전송 기능 개발',
       ],
-      links: {},
+      links: [],
       icon: ServerIcon,
-    },
-    {
-      name: 'Major',
-      description: '컴퓨터공학 / 시각디자인학 복수전공 학사',
-      links: {},
-      icon: AcademicCapIcon,
-    },
-    {
-      name: 'Skills',
-      description:
-        'TypeScript, React, Redux, Next, TailwindCSS, SCSS, Pug, Express, Sequelize, Python, Socket.io, AWS',
-      links: {},
-      icon: CodeBracketIcon,
     },
     {
       name: 'Channels',
       description: '',
-      links: {
-        email: 'yjgdesign@gmail.com',
-        github: 'https://github.com/yjglab',
-        blog: 'https://yjg-lab.tistory.com',
-      },
+      links: [
+        { title: 'email', url: 'yjgdesign@gmail.com' },
+        { title: 'github', url: 'https://github.com/yjglab' },
+        { title: 'blog', url: 'https://yjg-lab.tistory.com' },
+        { title: 'behance', url: 'https://www.behance.net/yukjaegyong' },
+      ],
       icon: SignalIcon,
+    },
+    {
+      name: 'Skills',
+      description:
+        'TypeScript, React, Redux, Next, TailwindCSS, SCSS, Pug, Express, Sequelize, MySQL, MongoDB, Python, Socket.io, AWS',
+      links: [],
+      icon: CodeBracketIcon,
+    },
+    {
+      name: 'Major',
+      description: '컴퓨터공학 / 시각디자인학 복수전공',
+      links: [],
+      icon: AcademicCapIcon,
     },
     {
       name: 'Award & Certification',
       description: ['지역 ICT이노베이션 스퀘어 코딩경진대회 대상', '정보처리기사'],
-      links: {},
+      links: [],
       icon: TrophyIcon,
     },
   ],
@@ -108,9 +100,9 @@ export const activities = [
     month: '2023.06',
     tags: ['알고리즘', '코딩경진대회'],
     subtitle: '전주문화산업진흥원 주관으로 진행된 코딩경진대회에서 대상 수상.',
-    thumb: 'https://github.com/yjglab/portfolio/assets/70316567/eaff2b5e-8606-43b9-ae12-2f423126ca4e',
+    thumb: 'https://github.com/yjglab/tira-santorini/assets/70316567/0e0e16f9-a156-47d1-a1be-41c2b9ceb6e8',
     details: {
-      banner: 'https://github.com/yjglab/portfolio/assets/70316567/eaff2b5e-8606-43b9-ae12-2f423126ca4e',
+      banner: 'https://github.com/yjglab/tira-santorini/assets/70316567/0e0e16f9-a156-47d1-a1be-41c2b9ceb6e8',
       link: [],
       description:
         '전주 ICT 교육사업부에서 진행한 코딩경진대회입니다. 총 2시간의 제한 시간 내로 원하는 언어를 골라 주어진 3개의 알고리즘 문제를 풀어내는 것이 대회 목표입니다. 가지고 있던 코딩 능력을 발휘해볼 소중한 기회였으며 대상이라는 값진 성과를 만들었습니다.',
@@ -118,7 +110,7 @@ export const activities = [
       images: [
         {
           name: '1',
-          src: 'https://github.com/yjglab/portfolio/assets/70316567/ff426520-c7ab-4f2c-beb3-99bd1ea84294',
+          src: 'https://github.com/yjglab/tira-santorini/assets/70316567/c1e5de19-e831-495c-a51a-25dfbace0487',
         },
       ],
     },
@@ -144,15 +136,19 @@ export const activities = [
       images: [
         {
           name: '1',
-          src: 'https://github.com/yjglab/portfolio/assets/70316567/90e0556d-cae1-4b35-9db9-0f2a0c6f17af',
+          src: 'https://github.com/yjglab/tira-santorini/assets/70316567/b6898dcd-a81f-44e3-90b4-bdd632eab4c2',
         },
         {
           name: '2',
-          src: 'https://github.com/yjglab/portfolio/assets/70316567/ccf665a5-d3da-4c02-b1c6-ba8c9c1afcdd',
+          src: 'https://github.com/yjglab/tira-santorini/assets/70316567/4a9e541b-b61d-4753-9e00-78d827dac777',
         },
         {
           name: '3',
-          src: 'https://github.com/yjglab/portfolio/assets/70316567/116afb65-734a-4b3f-b60c-9359962296b2',
+          src: 'https://github.com/yjglab/tira-santorini/assets/70316567/6a3b8564-404e-450a-810f-7341497bb493',
+        },
+        {
+          name: '4',
+          src: 'https://github.com/yjglab/tira-santorini/assets/70316567/5cfb1ab5-c078-43c6-9cce-31b05021c5e1',
         },
       ],
     },
@@ -165,7 +161,7 @@ export const activities = [
     month: '2020.07~',
     tags: ['기술 블로그', 'CS공부'],
     subtitle: '공부한 내용을 기록해두는 개인 블로그.',
-    thumb: 'https://github.com/yjglab/portfolio/assets/70316567/8c24b186-8b5b-4efe-bf9b-df12ca5129ab',
+    thumb: 'https://github.com/yjglab/tira-santorini/assets/70316567/acafa791-0ef8-4466-b3ee-70383e28e638',
     details: {
       banner: '',
       link: ['https://yjg-lab.tistory.com'],
@@ -174,15 +170,7 @@ export const activities = [
       images: [
         {
           name: '1',
-          src: 'https://github.com/yjglab/portfolio/assets/70316567/3e907448-516c-433a-bbd1-7e3ccd647bd0',
-        },
-        {
-          name: '2',
-          src: 'https://github.com/yjglab/portfolio/assets/70316567/4d3176a5-ddef-461a-9031-4ede9a726a17',
-        },
-        {
-          name: '3',
-          src: 'https://github.com/yjglab/portfolio/assets/70316567/0f8ad0de-6c1c-40c6-aba7-5812cf6c9e61',
+          src: 'https://github.com/yjglab/tira-santorini/assets/70316567/a011fea6-8e80-4916-be3c-d3c23131bc77',
         },
       ],
     },
@@ -200,8 +188,7 @@ export const projectsDev = [
     thumb: `${process.env.PUBLIC_URL}/images/bloobolt_thumb.png`,
     details: {
       version: '0.2.0',
-      banner:
-        'https://user-images.githubusercontent.com/70316567/244275440-8ca66b16-06fb-4cb5-b6e7-d10a318c8787.png',
+      banner: 'https://github.com/yjglab/BlooBolt/assets/70316567/3735aca2-828b-4c46-9b91-f80f51f2e851',
       link: {
         production: 'https://bloobolt.com',
         github: 'https://github.com/yjglab/BlooBolt',
@@ -210,7 +197,7 @@ export const projectsDev = [
       issues: {
         name: '스크롤 시 데이터가 몇차례 추가 로드되지 않는 현상',
         description: [
-          '기존 scroll 메서드를 사용함에 따라 분기 처리가 많은 이벤트 핸들러에서 간혹 데이터 로드 요청이 누락되는 상황.',
+          '기존 scroll 메서드를 사용함에 따라 분기 처리가 많은 이벤트 핸들러에서 데이터 로드 요청이 누락되는 상황.',
           'Intersection Observer를 적용해 코드 리팩토링, 여러번의 이벤트 요청 방식 제거 및 성능 개선.',
         ],
       },
@@ -310,8 +297,7 @@ export const projectsDev = [
 
     details: {
       version: '0.0.0',
-      banner:
-        'https://user-images.githubusercontent.com/70316567/244275412-3cdba637-ca3d-4c3c-87ca-23ebbeaf863f.png',
+      banner: 'https://github.com/yjglab/BlooWays/assets/70316567/b52d8eec-1d73-4f94-938c-656922c47217',
       link: {
         production: 'https://blooways.online',
         github: 'https://github.com/yjglab/BlooWays',
@@ -320,9 +306,9 @@ export const projectsDev = [
       issues: {
         name: '수신하지 않은 메시지에 대한 알림 처리',
         description: [
-          'A에리어에 있는 사용자가 B에리어에서 전송된 메시지에 대한 수신 알림을 받지 못하는 상황.',
-          '사용자가 각 에리어별로 입장한 시간, 마지막으로 메시지를 전송한 시간을 저장 후 API 요청.',
-          '전송된 시간 보다 데이터 생성일이 더 큰 메시지의 개수를 체크, 클라이언트로 전송하여 해결.',
+          'A에리어에 있는 사용자가 B에리어에서 전송된 메시지에 대한 수신 알림을 받지 못하는 상황',
+          '사용자가 각 에리어별로 입장한 시간, 마지막으로 메시지를 전송한 시간을 저장 후 API 요청',
+          '전송된 시간 보다 데이터 생성일이 더 큰 메시지의 개수를 체크, 클라이언트로 전송하여 해결',
         ],
       },
       skills: [
@@ -402,8 +388,7 @@ export const projectsDev = [
 
     details: {
       version: '0.3.0',
-      banner:
-        'https://user-images.githubusercontent.com/70316567/244275470-4cee1794-ddd5-4494-9a70-417a58c6293e.png',
+      banner: 'https://github.com/yjglab/yjglab/assets/70316567/cc40ae6c-db72-4adb-b5db-6688f3b87b2e',
       link: {
         production: 'https://mug-lab.fly.dev',
         github: 'https://github.com/yjglab/MuG',
@@ -477,8 +462,7 @@ export const projectsDev = [
 
     details: {
       version: '0.0.0',
-      banner:
-        'https://user-images.githubusercontent.com/70316567/244276278-2f275afb-7afe-45d2-abc9-a49e0903ab3a.png',
+      banner: 'https://github.com/yjglab/yjglab/assets/70316567/dbc717b1-ad83-4f1a-9ea9-1d9469fba0a0',
       link: {
         production: 'https://tira-santorini.fly.dev',
         github: 'https://github.com/yjglab/tira-santorini',
@@ -522,6 +506,99 @@ export const projectsDev = [
         {
           name: '4',
           src: 'https://user-images.githubusercontent.com/70316567/247320934-58ee70db-4fc0-4210-8e4d-cfe89a7b5691.gif',
+        },
+      ],
+    },
+  },
+
+  {
+    name: 'Journet',
+    href: 'journet',
+    imageAlt: 'Journey On the Internet',
+    date: 2020,
+    month: '9월',
+    tags: ['JavaScript', 'HTML', 'CSS'],
+    subtitle: 'Journey On the Internet',
+    thumb: `https://github.com/yjglab/journet/assets/70316567/dd7edc67-a865-4d9d-898a-a1e95aff3f82`,
+
+    details: {
+      version: '0.0.0',
+      banner: 'https://github.com/yjglab/journet/assets/70316567/b9066384-b756-4e4b-8567-16a4b0e88138',
+      link: {
+        production: 'https://yjglab.github.io/journet',
+        github: 'https://github.com/yjglab/journet',
+        wiki: 'https://www.behance.net/gallery/109969189/Journet-Journey-On-the-Internet',
+      },
+      skills: [
+        {
+          name: 'Frontend',
+          content: 'JavaScript, HTML, CSS',
+        },
+        {
+          name: 'Deploy',
+          content: 'github',
+        },
+      ],
+      description:
+        '웹 전시회를 진행합니다. 이번 전시회는 여행이라는 키워드를 중심으로 journey와 internet을 연결한 전시명으로 Journet을 제작하였습니다. 여행은 인간이 가장 높은 수준의 즐거움을 얻을 수 있는 유람입니다. 바이러스로 인해 고통스럽고 우울한 삶을 지내왔던 이들에게 시각적으로나마 유의미한 경험을 제공하고자 합니다.',
+      implements: [
+        {
+          name: '전체',
+          content: ['Basic Interaction / Animations'],
+        },
+      ],
+      images: [
+        {
+          name: '1',
+          src: 'https://github.com/yjglab/journet/assets/70316567/964ec1fd-db9e-48ef-98a4-c27ee323da8a',
+        },
+      ],
+    },
+  },
+  {
+    name: 'TROIS-COLEURS',
+    href: 'trois-coleurs',
+    imageAlt: 'trois-coleurs',
+    date: 2020,
+    month: '9월',
+    tags: ['JavaScript', 'HTML', 'CSS'],
+    subtitle: 'Krzysztof Kieslowski 감독의 세 가지 색 3부작 Web Poster',
+    thumb: `https://github.com/yjglab/TROIS-COLEURS/assets/70316567/204c562a-ae4f-45c3-8e4f-443c59ea62c1`,
+
+    details: {
+      version: '0.0.0',
+      banner: 'https://github.com/yjglab/TROIS-COLEURS/assets/70316567/c88061a0-d46e-4877-a9be-7a31bd1bdffd',
+      link: {
+        production: 'https://yjglab.github.io/TROIS-COLEURS/',
+        github: 'https://github.com/yjglab/TROIS-COLEURS',
+        wiki: 'https://www.behance.net/gallery/107300171/Trois-Couleurs-Motion-Poster',
+      },
+      skills: [
+        {
+          name: 'Frontend',
+          content: 'JavaScript, HTML, CSS',
+        },
+        {
+          name: 'Deploy',
+          content: 'github',
+        },
+      ],
+      description:
+        '곡선형 글자 위주로 배치해 자유를 표현. 평행하게  배치된 요소들로 장면을 구성해 평등을 표현. 다양한 크기의 배경 서체 형태의 모음, 화면 전체의 FADE IN 효과를 통해 박애를 표현. 색상 선택에 따른 요소 색상 변화. 종이 포스터의 질감적 특징을 활용.',
+      implements: [
+        {
+          name: '전체',
+          content: ['Basic Interaction / Animations'],
+        },
+      ],
+      images: [
+        {
+          name: '1',
+          src: 'https://github.com/yjglab/TROIS-COLEURS/assets/70316567/a391da02-c705-4441-bd10-4f3bf77c9278',
+        },
+        {
+          name: '2',
+          src: 'https://github.com/yjglab/TROIS-COLEURS/assets/70316567/c1040101-7e19-4f2f-913a-5abe8ad785de',
         },
       ],
     },

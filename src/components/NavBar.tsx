@@ -11,7 +11,7 @@ const navigation = {
     { name: 'About', href: '/' },
     { name: 'Projects', href: '/projects' },
     { name: 'Activities', href: '/activities' },
-    { name: 'Personal Brand', href: '/brand' },
+    // { name: 'Personal Brand', href: '/brand' },
   ],
 };
 
@@ -39,7 +39,7 @@ const NavBar: FC = () => {
   }, []);
 
   return (
-    <div id='navbar' className='fixed top-0 w-full z-50 shadow-lg shadow-slate-300/30'>
+    <div id='navbar' className='fixed top-0 w-full z-50 '>
       {/* 모바일 */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as='div' className='relative md:hidden' onClose={setOpen}>
@@ -90,7 +90,7 @@ const NavBar: FC = () => {
 
                 <div className='absolute bottom-5 mt-2 px-4 py-6 w-full'>
                   <div className='flex w-full justify-center gap-1 items-center left-0 right-0 mx-auto'>
-                    <img alt='' src={bloosLogoFull} className='w-24' />
+                    <img alt='' src={bloosLogo} className='w-8' />
                   </div>
                   <p className='mt-4 text-center text-xs leading-6 text-slate-600'>
                     © 2023 Jaekyeong Yuk. All rights reserved.
@@ -139,9 +139,13 @@ const NavBar: FC = () => {
                 <span className='sr-only'>Open menu</span>
                 <Bars3Icon className='h-6 w-6' aria-hidden='true' />
               </button>
-              <div className='lg:block hidden absolute right-0'>
+              <div className='md:block hidden absolute right-0'>
                 <a
-                  href={me.informations.find((v) => v.name === '채널')?.links.github}
+                  href={
+                    me.informations
+                      .find((v) => v.name === 'Channels')
+                      ?.links.find((link) => link.title === 'github')?.url
+                  }
                   target='_blank'
                   rel='noreferrer'
                 >
