@@ -83,8 +83,12 @@ export const me = {
       icon: AcademicCapIcon,
     },
     {
-      name: 'Award & Certification',
-      description: ['지역 ICT이노베이션 스퀘어 코딩경진대회 대상', '정보처리기사'],
+      name: 'Experiences',
+      description: [
+        'ICT이노베이션 스퀘어 코딩경진대회 대상 (2023.06, 전주)',
+        '정보처리기사 (2022.09, 한국산업인력공단)',
+        '파이썬 선형대수 모듈 학습법 강의 제작. 누적 수강생 3000여명, 평점 4.9/5.0 (유명 강의 플랫폼으로부터 업로드 섭외, 인프런 / 프로그래머스)',
+      ],
       links: [],
       icon: TrophyIcon,
     },
@@ -375,6 +379,91 @@ export const projectsDev = [
         },
       ],
     },
+  },
+  {
+    name: 'Nebaram Web Solutions',
+    href: 'nebaram',
+    imageAlt: 'nebaram thumbnail',
+    date: 2023,
+    month: '7월~(개발 중)',
+    tags: [
+      'TypeScript',
+      'React',
+      'Next',
+      'React-query',
+      'Framer-motion',
+      'TailwindCSS',
+      'Express',
+      'Sequelize',
+      'Firebase',
+    ],
+    subtitle: '네 개의 기술력이 모여 거대한 돌풍을 만듭니다',
+    thumb: `${process.env.PUBLIC_URL}/images/nebaram_thumb.png`,
+    details: {
+      version: '0.0.0',
+      banner: '',
+      link: {
+        production: '',
+        github: '',
+        wiki: '',
+      },
+      issues: {
+        name: '',
+        description: [''],
+      },
+      skills: [
+        {
+          name: 'Frontend',
+          content: 'TypeScript, React, Redux Toolkit, Next, Tailwind',
+        },
+        {
+          name: 'Backend',
+          content: 'Express, Sequelize(MySQL)',
+        },
+        {
+          name: 'Deploy',
+          content: 'AWS(EC2+S3+Lambda)',
+        },
+        {
+          name: 'Secure',
+          content: 'Nginx + HTTPS',
+        },
+      ],
+      description: '',
+      implements: [
+        {
+          name: '',
+          content: [''],
+        },
+        {
+          name: '',
+          content: [''],
+        },
+        {
+          name: '전체',
+          content: [''],
+        },
+      ],
+      images: [
+        {
+          name: '1',
+          src: '',
+        },
+        {
+          name: '2',
+          src: '',
+        },
+        {
+          name: '3',
+          src: '',
+        },
+        {
+          name: '4',
+          src: '',
+        },
+      ],
+    },
+    progress: true,
   },
   {
     name: 'Museum Union Gallery',

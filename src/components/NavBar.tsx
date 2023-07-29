@@ -2,8 +2,8 @@ import React, { Fragment, useState, FC, useCallback, useEffect } from 'react';
 import { Dialog, Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
-import { bloosLogo, bloosLogoFull } from '../tools/global';
 import { me } from '../tools/data';
+import { clogo } from '../tools/global';
 
 const navigation = {
   categories: [],
@@ -90,7 +90,7 @@ const NavBar: FC = () => {
 
                 <div className='absolute bottom-5 mt-2 px-4 py-6 w-full'>
                   <div className='flex w-full justify-center gap-1 items-center left-0 right-0 mx-auto'>
-                    <img alt='' src={bloosLogo} className='w-8' />
+                    <img alt='' src={clogo} className='w-8' />
                   </div>
                   <p className='mt-4 text-center text-xs leading-6 text-slate-600'>
                     © 2023 Jaekyeong Yuk. All rights reserved.
@@ -112,7 +112,7 @@ const NavBar: FC = () => {
             >
               <div className='flex ml-2'>
                 <Link className='flex items-center' to='/'>
-                  <img src={bloosLogo} alt='logo' className='w-5' />
+                  <img src={clogo} alt='logo' className='w-5' />
                   <span className='ml-1.5 text-slate-700 font-bold text-lg'>Jaekyeong Yuk</span>
                 </Link>
               </div>

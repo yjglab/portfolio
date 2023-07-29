@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { avatar, bloosLogoFull } from '../tools/global';
+import { avatar, clogo } from '../tools/global';
 
 const Brand = () => {
   useEffect(() => {
@@ -9,7 +9,7 @@ const Brand = () => {
   return (
     <section className='font-main tracking-tight font-medium min-h-screen items-center flex justify-center relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:px-8'>
       <div className='mx-auto max-w-2xl lg:max-w-5xl'>
-        <img className='mx-auto w-[90%] sm:w-[50%]' src={bloosLogoFull} alt='' />
+        <img className='mx-auto w-[90%] sm:w-[50%]' src={clogo} alt='' />
         <figure className='mt-14'>
           <blockquote className='text-center text-lg leading-8 text-slate-700 sm:leading-8'>
             <p>

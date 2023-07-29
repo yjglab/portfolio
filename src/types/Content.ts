@@ -26,4 +26,5 @@ export interface Content {
     }>;
     images: Array<{ name: string; src: string }>;
   };
+  progress?: boolean;
 }
