@@ -4,6 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 import { me } from '../tools/data';
 import { clogo } from '../tools/global';
+import HeaderNotice from './HeaderNotice';
 
 const navigation = {
   categories: [],
@@ -165,6 +166,7 @@ const NavBar: FC = () => {
           </div>
         </nav>
       </header>
+      <HeaderNotice />
     </div>
   );
 };
