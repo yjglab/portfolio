@@ -96,14 +96,7 @@ const Home = () => {
             about4InView && 'opacity-100'
           } opacity-0 duration-300 delay-[500ms] mx-auto mt-12 max-w-2xl lg:mt-14 lg:max-w-4xl`}
         >
-          <div className='text-[17px] grid grid-cols-1 gap-x-16 gap-y-10 tracking-tight sm:grid-cols-2 lg:pt-2'>
-            {me.description.self.slice(0, 2).map((s) => (
-              <div key={s.title} className=' flex flex-col items-start'>
-                <div className='mt-4 font-bold text-slate-800'>{s.title}</div>
-                <div className='mt-2 font-normal leading-[1.85rem] text-gray-700'>{s.content}</div>
-              </div>
-            ))}
-          </div>
+          <div className='text-[17px] grid grid-cols-1 gap-x-16 gap-y-10 tracking-tight sm:grid-cols-2 lg:pt-2'></div>
         </div>
 
         <div
@@ -112,25 +105,9 @@ const Home = () => {
             about5InView && 'opacity-100'
           } opacity-0 duration-300 delay-[500ms] mx-auto mt-12 max-w-2xl lg:mt-14 lg:max-w-4xl`}
         >
-          <div className='text-[17px] grid grid-cols-1 gap-x-16 gap-y-10 tracking-tight sm:grid-cols-2 lg:pt-2'>
-            {me.description.self.slice(2, 4).map((s) => (
-              <div key={s.title} className=' flex flex-col items-start'>
-                <div className='mt-4 font-bold text-slate-800'>{s.title}</div>
-                <div className='mt-2 whitespace-pre-line font-normal leading-[1.85rem] text-gray-700'>
-                  {s.content}
-                </div>
-              </div>
-            ))}
-          </div>
+          <div className='text-[17px] grid grid-cols-1 gap-x-16 gap-y-10 tracking-tight sm:grid-cols-2 lg:pt-2'></div>
         </div>
       </div>
-
-      {/* <div className='mx-auto mt-32 max-w-2xl text-center'>
-        <p className='mt-2 text-2xl font-bold tracking-tight text-slate-700 sm:text-3xl'>Self Introduce</p>
-        <p className='lg:text-center text-left mt-6 text-lg leading-8 text-slate-600'>
-          {me.description.self}
-        </p>
-      </div> */}
     </div>
   );
 };
